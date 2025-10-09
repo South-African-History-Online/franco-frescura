@@ -3,7 +3,8 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture | Indigenous
+title: 'The Zulus Of The Highveld: The Role Of Architectural Form In The Establishment
+  Of A Competing "Zulu" Political Identity Among The Matabele 1822-1897'
 type: docs
 ---
 

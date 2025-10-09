@@ -3,7 +3,7 @@ categories:
 - Urban Issues
 date: '2025-01-01'
 draft: false
-title: Housing Issues
+title: Report Of A Site Investigation Of Houses Built At Rosedale Ext 64, Uitenhage
 type: docs
 ---
 

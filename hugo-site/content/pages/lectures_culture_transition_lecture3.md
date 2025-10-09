@@ -3,7 +3,8 @@ categories:
 - General
 date: '2025-01-01'
 draft: false
-title: Lectures
+title: 'Culture In Transition In South Africa - Lecture 3: The Indigenous South African
+  Dwelling'
 type: docs
 ---
 

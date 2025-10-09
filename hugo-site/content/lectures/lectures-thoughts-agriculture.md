@@ -3,7 +3,8 @@ categories:
 - Lectures
 date: '2025-01-01'
 draft: false
-title: Lectures
+title: Thoughts On Architecture And Architectural Education Address To A Selection
+  Committee
 type: docs
 ---
 

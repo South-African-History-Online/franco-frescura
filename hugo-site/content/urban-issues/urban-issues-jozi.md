@@ -3,7 +3,7 @@ categories:
 - Urban Issues
 date: '2025-01-01'
 draft: false
-title: Urban Issues
+title: 'Jozi: A History Of Black Johannesburg'
 type: docs
 ---
 

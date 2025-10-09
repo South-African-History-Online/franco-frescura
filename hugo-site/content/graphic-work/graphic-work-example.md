@@ -3,7 +3,7 @@ categories:
 - Graphic Work
 date: '2025-01-01'
 draft: false
-title: Architecture | Graphic Work
+title: The John Burger Saga
 type: docs
 ---
 

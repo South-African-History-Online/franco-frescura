@@ -3,7 +3,7 @@ categories:
 - Postal History
 date: '2025-01-01'
 draft: false
-title: Postal History
+title: The Post Offices Of The Cape Of Good Hope 1792 - 1910
 type: docs
 ---
 

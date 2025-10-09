@@ -3,7 +3,7 @@ categories:
 - General
 date: '2025-01-01'
 draft: false
-title: Lectures
+title: 'Culture In Transition In South Africa Lecture 1: The Apartheid City'
 type: docs
 ---
 

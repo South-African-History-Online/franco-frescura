@@ -3,7 +3,7 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture | Indigenous
+title: The Architecture Of Southern Africa Before The Difaqane
 type: docs
 ---
 

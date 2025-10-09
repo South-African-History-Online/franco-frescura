@@ -3,7 +3,7 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture | Indigenous
+title: The Pre-Industrial Architecture Of The Transvaal
 type: docs
 ---
 

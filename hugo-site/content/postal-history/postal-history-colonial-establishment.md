@@ -3,7 +3,7 @@ categories:
 - Postal History
 date: '2025-01-01'
 draft: false
-title: Postal History |General Articles
+title: The Cape Colonial Establishment, 1872-1910
 type: docs
 ---
 

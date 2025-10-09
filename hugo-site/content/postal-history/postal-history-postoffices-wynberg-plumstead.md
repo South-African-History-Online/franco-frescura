@@ -3,7 +3,7 @@ categories:
 - Postal History
 date: '2025-01-01'
 draft: false
-title: Postal History |General Articles
+title: The Post Offices At Wynberg And Plumstead
 type: docs
 ---
 

@@ -3,7 +3,8 @@ categories:
 - General
 date: '2025-01-01'
 draft: false
-title: Lectures
+title: 'Culture In Transition In South Africa - Lecture 4: Problems In Conservation
+  Of The Historical Environment In Post-Apartheid South Africa'
 type: docs
 ---
 

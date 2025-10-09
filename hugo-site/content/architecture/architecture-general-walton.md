@@ -3,7 +3,7 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture
+title: Editorial In Honour Of James Walton
 type: docs
 ---
 

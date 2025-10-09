@@ -3,7 +3,7 @@ categories:
 - Postal History
 date: '2025-01-01'
 draft: false
-title: Postal History |General Articles
+title: Colonial Post And Telegraph Diary Of The Cape Of Good Hope
 type: docs
 ---
 

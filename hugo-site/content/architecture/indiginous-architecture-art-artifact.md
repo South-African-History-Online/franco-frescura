@@ -3,7 +3,7 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture | Indigenous
+title: Architecture, Art And Artifact
 type: docs
 ---
 

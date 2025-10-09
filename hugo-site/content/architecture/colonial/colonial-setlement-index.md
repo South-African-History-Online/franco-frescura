@@ -3,7 +3,8 @@ categories:
 - Colonial Settlement
 date: '2025-01-01'
 draft: false
-title: Architecture | Colonial Settlement
+title: 'The Farmer, The Preacher And The Land Speculator: Village Development Patterns
+  In The Karoo Region Of The Cape Colony, 1806 To 1920'
 type: docs
 ---
 

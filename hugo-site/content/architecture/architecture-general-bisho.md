@@ -3,7 +3,7 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture
+title: 'Bisho: A Post Modernist Mirage'
 type: docs
 ---
 

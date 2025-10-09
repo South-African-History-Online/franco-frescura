@@ -3,7 +3,7 @@ categories:
 - Urban Issues
 date: '2025-01-01'
 draft: false
-title: Urban Issues
+title: The Spatial Geography Of Urban Apartheid
 type: docs
 ---
 

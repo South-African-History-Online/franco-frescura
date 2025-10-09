@@ -3,7 +3,8 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture | Indigenous
+title: Colonialism As A Factor In The Development Of Southern African Indigenous Vernacular
+  Architecture, 1810-1910
 type: docs
 ---
 

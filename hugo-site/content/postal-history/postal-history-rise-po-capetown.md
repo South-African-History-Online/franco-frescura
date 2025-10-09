@@ -3,7 +3,7 @@ categories:
 - Postal History
 date: '2025-01-01'
 draft: false
-title: Postal History |General Articles
+title: The Rise Of The General Post Office In Cape Town, 1792-1910
 type: docs
 ---
 

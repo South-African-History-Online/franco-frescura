@@ -3,7 +3,7 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture | Indigenous
+title: 'Processes And Product In Rural Architecture: A Southern African Case Study'
 type: docs
 ---
 

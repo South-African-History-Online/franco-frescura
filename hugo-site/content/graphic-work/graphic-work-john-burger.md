@@ -3,7 +3,7 @@ categories:
 - Graphic Work
 date: '2025-01-01'
 draft: false
-title: Architecture | Graphic Work
+title: Cartoons, Posters And Other Student Graphics
 type: docs
 ---
 

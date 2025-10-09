@@ -3,7 +3,7 @@ categories:
 - Urban Issues
 date: '2025-01-01'
 draft: false
-title: Housing Issues
+title: 'KwaNobuhle Timber Housing: A Case Study'
 type: docs
 ---
 

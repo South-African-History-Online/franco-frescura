@@ -3,7 +3,8 @@ categories:
 - Urban Issues
 date: '2025-01-01'
 draft: false
-title: Housing Issues
+title: 'Tyoksville, Eastern Cape: A Survey Of The Housing Needs In A Transitional
+  Settlement Area'
 type: docs
 ---
 

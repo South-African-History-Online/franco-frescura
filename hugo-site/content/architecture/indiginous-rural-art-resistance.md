@@ -3,7 +3,8 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture | Indigenous
+title: 'Rural Art And Rural Resistance: The Rise Of A Wall Decorating Tradition In
+  Rural Southern Africa'
 type: docs
 ---
 

@@ -3,7 +3,7 @@ categories:
 - Architecture
 date: '2025-01-01'
 draft: false
-title: Architecture
+title: Proposed Xhosa Cultural Park And Tourist Amenity Port Elizabeth
 type: docs
 ---
 

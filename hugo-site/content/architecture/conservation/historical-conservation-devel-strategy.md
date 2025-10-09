@@ -3,7 +3,8 @@ categories:
 - Historical Conservation
 date: '2025-01-01'
 draft: false
-title: Architecture | Historical Conservation
+title: The Development Of A Conservation Strategy For Small Urban Centres In The Eastern
+  Cape
 type: docs
 ---
 

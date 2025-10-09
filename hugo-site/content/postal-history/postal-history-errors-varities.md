@@ -3,7 +3,7 @@ categories:
 - Postal History
 date: '2025-01-01'
 draft: false
-title: Postal History |General Articles
+title: Errors And Varieties In Early Southern African Postal Cancellers And Obliterators
 type: docs
 ---
 
