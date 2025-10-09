@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="home">
+    <section class="hero">
+        <h1>Franco Frescura Archive</h1>
+        <p class="lead">{{ .Site.Params.description }}</p>
+    </section>
+
+    <section class="sections">
+        <h2>Explore the Archive</h2>
+        <div class="grid">
+            {{ range .Site.Sections }}
+            <div class="card">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ if .Params.description }}
+                <p>{{ .Params.description }}</p>
+                {{ else if .Summary }}
+                <p>{{ .Summary }}</p>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+    {{ $pages := where .Site.RegularPages "Section" "!=" "" }}
+    {{ if $pages }}
+    <section class="recent">
+        <h2>Recent Content</h2>
+        <ul>
+        {{ range first 5 $pages }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="section">{{ .Section }}</span>
+            </li>
+        {{ end }}
+        </ul>
+    </section>
+    {{ end }}
+</div>
+{{ end }}
