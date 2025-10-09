@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: franco-frescura
+    ports:
+      - "8888:80"
+    volumes:
+      - ./legacy-site:/usr/share/nginx/html:ro
+    restart: unless-stopped

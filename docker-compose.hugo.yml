@@ -1,0 +1,23 @@
+services:
+  # Original HTML site on port 8888
+  html-site:
+    image: nginx:alpine
+    container_name: franco-frescura-html
+    ports:
+      - "8888:80"
+    volumes:
+      - ./legacy-site:/usr/share/nginx/html:ro
+    restart: unless-stopped
+
+  # Hugo development server on port 1313
+  # This file is deprecated - use docker-compose.dev.yml instead
+  # Kept for reference only
+  hugo-dev:
+    image: klakegg/hugo:ext-alpine
+    container_name: franco-frescura-hugo
+    command: server --bind 0.0.0.0
+    ports:
+      - "1313:1313"
+    volumes:
+      - ./hugo-site:/src
+    working_dir: /src
