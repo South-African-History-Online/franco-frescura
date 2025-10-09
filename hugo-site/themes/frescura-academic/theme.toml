@@ -1,0 +1,5 @@
+name = "Frescura Academic"
+license = "MIT"
+description = "A custom academic theme for the Franco Frescura Archive"
+tags = ["academic", "documentation", "research"]
+min_version = "0.111.0"

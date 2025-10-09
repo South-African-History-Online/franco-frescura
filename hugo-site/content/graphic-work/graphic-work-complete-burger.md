@@ -1,0 +1,14 @@
+---
+categories:
+- Graphic Work
+date: '2025-01-01'
+draft: false
+title: Architecture | Graphic Work
+type: docs
+---
+
+> [MENU](graphic-work-john-burger.html) / PREVIOUS / NEXT
+
+![01-complete-burger](/images/burger-saga/01-complete-burger.jpg)  
+  
+---

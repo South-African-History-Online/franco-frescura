@@ -1,0 +1,58 @@
+---
+categories:
+- Historical Conservation
+date: '2025-01-01'
+draft: false
+title: Architecture | Historical Conservation
+type: docs
+---
+
+##### WHO NEEDS MONUMENTS?
+
+Franco Frescura
+
+Architects, almost by definition and certainly by their very nature, build monuments. They build monuments to their clients, to their national heroes, to their kings, to their presidents, to their political systems, to corporate society and to their own egos. They build monuments because they are encouraged to do so from the very first moment they cross the threshold of an architectural school; because professional journals publish monumental work and sneer at anything smaller; because politicians and financiers reward them richly; because society lionises its monument builders and their power; and because, unlike other mortals, architects are given the opportunity of achieving immortality through their work. It is not for nothing that most architectural history books are littered with the monuments of man: the religious shrines, the corporate headquarters and the homes of the rich and powerful.
+
+It should not come as a surprise therefore that the programme for the conservation of our historical architecture in South Africa should have become involved primarily with the declaration of national monuments. Not only are architects influential in this movement but our society, indoctrinated by generations of architectural historians, has come to equate monuments with history and, more dangerously, with culture. This is plainly wrong. Not only does this marginalise the role of the larger community in the processes of history, but it also ignores their habitat, which generally constitutes the major part of the built environment.
+
+There are, of course, other reasons why South African society should have become so concerned with the creation of architectural monuments. In cases where a small elite controls political power it also controls the writing, and the rewriting, of history. At a time when South Africa's white minority finds its legitimacy being challenged from a variety of sources, it is natural that it should seek to reinforce its precarious claim to tenure by elevating examples of its material culture to the status of monuments. Revel Fox perceived this in 1986 when he stated that:
+
+> "_To achieve true cultural representation, our very history books will have to be rewritten. People, places and events with special significance for the different groups in our society will have to be identified_ " (1987: 66)
+
+However, like other architects Fox, is also bound by the concept of celebrating history through monuments. He goes on to claim that "_there will be a need for new monuments to record the memories of past events_ ". (1987: 66)
+
+This does not mean to say that, given a different set of circumstances, the concerns and reactions of the local Black community would differ radically from this standpoint. A good example of this was given in 1981 by Dr Edison Zvobgo when he was still Zimbabwe's Minister of Local Government and Housing. Giving evidence as an expert witness in a court case successfully instituted to save Jameson House, in Harare, from demolition, he stated that "_Nations who go about destroying their own buildings are in danger of destroying their own heritage._ " (Jackson)
+
+In this case Zvobgo was motivated by more than mere aesthetic considerations. In 1896 some twenty-two Zimbabwean patriots, who had taken part in the national uprising against the white settlers, were tried and sentenced in the High Court which sat in Jameson House. Thus, although the Zimbabwean experience differs from the South African one on a number of significant points, the intent of their conservation policy remains orientated towards the preservation and declaration of individual buildings as monuments. As such then, its outcome is very similar to our own.
+
+Thus, what is in question here is not the concept of conservation, but the manner in which this is enforced through a policy of declaring monuments. It is true that the creation of a small number of monuments within an urban environment could act as a focus for the restoration of smaller and less important historical buildings through private enterprise. It is equally true that giving official historical status to individual buildings may, at the same time, de-recognise others about them, giving the impression that they are somehow less worthy of recognition and thus opening them up to a process of indiscriminate development. This is because current conservation policies single out special cases, idiosyncratic examples or buildings of exceptional merit and, through the process of monumentalisation, isolate them from the social context in which they exist.
+
+This means that the larger matrix of historical buildings and building elements is generally ignored. This is incorrect, for such an attitude does not take into account the reasons why such built environments should be preserved. This extends beyond mere aesthetics, or associations with prominent persons and events, and begins to explain the nature of historical habitats. These environments have a scale which includes such varied elements as width of streets, height of buildings, material textures and a clearly defined and identifiable language of architecture. We feel secure in such surrounds, secure in our knowledge of place, time and self-identity. This is why tourists go to such extraordinary trouble to visit Firenze, Jerusalem, Santa Fe and Stellenbosch or, alternatively, why so few people choose to holiday in Welkom, Vanderbijlpark and Carletonville.
+
+In 1985 the Department of Architecture at the University of Port Elizabeth, was invited by the citizens of Uitenhage, a small town in the eastern Cape, to conduct a survey of its historical architecture. There they found that although the place was endowed with a number of fine and well preserved civic structures, few historical buildings of a more humble domestic nature remained intact. Out of a total of 1983 buildings in Uitenhage's historical centre, only 3.1% were of interest to the conservation study. This compared poorly with other towns in the region such as King William's Town (where the equivalent figure was 8.7%) and Uniondale (18%). Even Oudtshoorn, which has undergone extensive redevelopment of its historical core in recent times, could boast a higher figure of 6.9%. It was estimated that, at the present rate of destruction, only a scattering of Uitenhage's historical heritage would survive to see the town's bi-centennial in 2004.
+
+However, researchers from the University of Port Elizabeth also found that much of the town's architectural charm and historical character could be attributed to a variety of applied elements: timber sash windows, decorated roof fascias, cast iron ridge pieces, verandahs with cast iron or fretted timber trims, and ornamental roof ventilators. Certainly none of these items, taken individually, warranted the status of a declared national monument. Yet the larger impact of the town was not owed to its civic buildings so much as to the textures of its domestic architecture and the modest scale of its well-wooded streets. Sadly, much of this heritage is being lost daily through a combination of ignorance, a lack of maintenance or merely a desire of innovation for its own sake - a story which is being repeated daily throughout southern Africa's smaller towns and villages.
+
+Perhaps then what is required is a new set of attitudes in our conservation policies. If national monuments are truly needed, then by all means, let us have national monuments - but let us use them as part of a larger policy towards the urban landscape. As things stand, monuments are proclaimed in isolation of the contribution they make to urban life. When Dr Nic Woolff, for example, conducted his restoration of the Donkin row-houses in Port Elizabeth, these were declared national monuments and, in due course, his work received a number of conservation awards. His citations make reference to the careful workmanship, to the exact recreation of details and to the landmark value of the structures. Not once has it been mentioned that the buildings create a corridor which not only links the city's business district to the historical residential core but, in doing so, they reinforce the conservation efforts of others in the area, incorporating them into a larger and more cohesive whole.
+
+This then is where the merit of creating monuments truly lies: to reinforce existing historical fabrics; to re-integrate old buildings into the present-day life and activities of the community; to return them from structural decay and the threshold of demolition; to serve as focal points for further development; to put a halt to a potential "domino effect", where the loss of one important building puts a series of others under the immediate threat of removal. Such buildings, in their turn, reward the community and enhance the architectural character of its habitat, creating an exciting stage-set for the daily lives of their residents.
+
+We must also recognise that urban redevelopment is subject to market forces which determine where opportunities for new economic growth may exist or arise. Thus a conservation policy which sets out to create a number of museums, sterile and devoid of life, must fail because this stifles the economic development of a town. On the other hand, a policy which creates opportunities for growth also generates new environments. These are valuable assets which contribute to the welfare of all citizens.
+
+Ultimately however, when we discuss a conservation policy in its wider sense, we are not talking about monuments, but are seeking to maintain and restore the character of a built environment and retain a worthwhile quality of life for its inhabitants. The words of Jean Cassou, written in 1968, stand as a clear warning against a conservation policy guided by the narrow concerns of sectarian culture. He said:
+
+> "_The only obligation that this 'culture' imposes on us is to preserve the testimonies of the past, and perhaps even more to preserve the opportunity they provide for self-glorification_." (1968: 8-9)
+
+Much as patriotism is claimed to have become the last refuge of the scoundrel, we must not allow "culture" to become the last bastion of the bigot.
+
+##### POSTSCRIPT
+
+This article was published in 1989 under the title of Who Needs Monuments? Juta’s South African Journal of Property, Vol 5, No 2:40-42.
+
+##### BIBLIOGRAPHY
+
+> CASSOU, Jean. 1968. Art and Confrontation. Greenwich, New York: Graphic Society. 8-9.  
+>  FOX, Revel. 1987. Is There a Future for Our Past? Paper published in Conserving a Heritage, edited by Franco Frescura. Port Elizabeth: ISAA. 66.  
+>  JACKSON, Peter. Zimbabwe-Initiatives in the Conservation of Historic Buildings. Symposium of the International Union of Architects and the Society of Egyptian Architects, Cairo, 12-14 November.
+
+Copyright @ francofrescura.co.za

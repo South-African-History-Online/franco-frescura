@@ -1,0 +1,118 @@
+baseURL = 'https://francofrescura.org/'
+languageCode = 'en-us'
+title = 'Franco Frescura Archive'
+theme = 'frescura-academic'
+paginate = 10
+
+# Enable GitInfo for last modified dates
+enableGitInfo = false
+
+# Enable emoji support
+enableEmoji = true
+
+# Table of contents
+[markup.tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 2
+
+# Markdown rendering
+[markup.goldmark.renderer]
+  unsafe = true  # Allow HTML in markdown
+
+[params]
+  # PaperMod specific
+  env = "production"
+  description = "A comprehensive digital archive of Franco Frescura's work on South African architecture, urban development, and cultural heritage"
+  author = "Franco Frescura"
+
+  # Navigation
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowToc = true
+  TocOpen = false
+
+  # Home page
+  homeInfoParams.Title = "Franco Frescura Archive"
+  homeInfoParams.Content = "A comprehensive digital archive dedicated to the life, work, and legacy of Franco Frescura - architect, academic, graphic artist, and authority on South African indigenous architecture."
+
+  # Search
+  fuseOpts.isCaseSensitive = false
+  fuseOpts.shouldSort = true
+  fuseOpts.threshold = 0.4
+  fuseOpts.distance = 100
+  fuseOpts.ignoreLocation = true
+
+# Menu structure
+[[menus.main]]
+  identifier = "biography"
+  name = "Biography"
+  url = "/biography/"
+  weight = 10
+
+[[menus.main]]
+  identifier = "architecture"
+  name = "Architecture"
+  url = "/architecture/"
+  weight = 20
+
+[[menus.main]]
+  identifier = "urban"
+  name = "Urban Issues"
+  url = "/urban-issues/"
+  weight = 30
+
+[[menus.main]]
+  identifier = "lectures"
+  name = "Lectures"
+  url = "/lectures/"
+  weight = 40
+
+[[menus.main]]
+  identifier = "graphic-work"
+  name = "Graphic Work"
+  url = "/graphic-work/"
+  weight = 50
+
+[[menus.main]]
+  identifier = "postal"
+  name = "Postal History"
+  url = "/postal-history/"
+  weight = 60
+
+[[menus.main]]
+  identifier = "glossary"
+  name = "Glossary"
+  url = "/glossary/"
+  weight = 70
+
+[[menus.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 80
+
+# Taxonomies (tags and categories)
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  region = 'regions'
+  topic = 'topics'
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+# Image processing
+[imaging]
+  quality = 85
+  resampleFilter = "Lanczos"
+
+# Privacy settings
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true

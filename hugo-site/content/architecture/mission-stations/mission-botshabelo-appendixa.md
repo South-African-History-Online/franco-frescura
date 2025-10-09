@@ -1,0 +1,62 @@
+---
+categories:
+- Mission Stations
+date: '2025-01-01'
+draft: false
+title: Mission Stations
+type: docs
+---
+
+APPENDIX A
+
+ADDITIONAL REFERENCES TO BERLIN MISSION STATIONS IN THE TRANSVAAL
+
+DA MERENSKY
+
+EDITORIAL INTRODUCTION
+
+In addition to his detailed account on the construction of his mission at Botshabelo, Merenski also made reference in his book to the establishment by the Berlin Missionary Society of a number of other stations in the Transvaal. These included a number of comments on their architecture and building technology which, having little context, have been grouped here into a separate appendix.
+
+MAHAMBA MISSION STATION
+
+Three years after the death of king Rapusa of Swaziland, the missionary Allison and his wife arrived at Matemba, capital of the Swazis. He founded a station at the Umkonto River. Then a brother of the young king, Umswazi, contested the accession to the throne and, in the skirmishes that followed, the Mission Station, which included the mission house and the church, was destroyed. Allison and his wife fled to Natal and founded a Mission Station at Edendale, near Pietermaritzburg. (Merensky, 1889: 9)(15)
+
+RIETKLOOF MISSION STATION, later renamed Gerlachshoop
+
+Gerlachshoop Mission Station was established next to Maleo's town, fifteen German miles out of Lydenburg, on land donated by the chief. (Merensky, 1889: 22)
+
+The first thing we had to do was to rebuild the water channel, which was 1500 paces long, a task which took fourteen days. Other labourers erected thorn-bush fences for a kraal and I began a log house, the kind of dwelling we always erect first on a new Mission Station. Other houses whose walls consisted of sods, followed. Log structures last quite well just as long as they are built with termite-resistant timber. Our corner posts are dug into the ground and walls, made out of thinner poles, are placed between them. Timber members are then nailed and bound to them horizontally. Reeds are placed vertically in the gaps and, finally, a dagga packing is applied on the inside and out. The walls and the dagga floor are finally smoothed over. The roof consists of lightweight beams and is thatched. Our houses measured four paces by eight; my little window was closed with a fixed piece of cloth but the door was left open. At the river, where we found usable clay, we started a brickyard employing some natives who had learned the trade during their years as migrant labourers. We constructed the moulds and stone kilns and soon got to work erecting a larger house made out of fired bricks. Because it is so difficult to get, lime is used only as a whitewash. Limestone was carted in from a site distant some five hours travel away from us, and was fired in an open kiln. Using this lime as a mortar we laid a brick foundation to prevent termites from reaching the woodwork of the walls and roof. Alas, in spite of this precaution, within a year the thatched roof had become infested, but this stopped at the end of the beams on the corner of the house where we had dipped the beam ends into aloe sap and the trusses were of termite-resistant wood. (Merensky, 1889: 41-42)
+
+We taught our workers to lay bricks. (Merensky, 1889: 44)
+
+The missionary learns to understand the natives, their customs and character, by working alongside them at mundane tasks, such as those necessary to make a station self- sufficient in housing and the production of food. German artisans, sent out to establish the Mission Station, were of no great help. They regarded the natives as servants and frequently misunderstood them. The natives in turn would become bitter and suspicious towards the missionaries. (Merensky, 1889: 45)
+
+BERLIN MISSION EFFORTS IN THE TRANSVAAL
+
+By 1882 thirty mission stations were founded by the Berlin missionaries in the Transvaal, but some have since been vacated. (Merensky, 1889: 47)
+
+KCHALATLOLU MISSION STATION
+
+Our new Mission Station, Kchalatlolu, lies at the foot of the Kchalatlolu mountains, next to the Sebeloane River. We proceeded to build a system of water reticulation, followed by a log house eight paces long and four paces wide, similar to the one at Gerlachshoop. It had a window, covered with sack-cloth, and a door, which was closed at night with mats. Our labourers worked for six weeks in exchange for a cotton blanket, two to three weeks for a hoe. Boys and girls received as wages a few beads or some brass wire. (Merensky, 1889: 80)
+
+We began to build a larger house for our missionary in Kchalatlolu. Andries Moloi, the translator, knew how to make sun-dried bricks and 13,000 were manufactured. Poles for the rafters and beams were bought from the natives and planks derived from chests (in which donations for the Mission Station were sent from Berlin) were used for window frames and for the shutters. The latter were in two sections, having a top and bottom part. The roof was thatched and the floor made from smeared clay; the house was then white washed inside and out. It had three rooms: the centre one was used as the main working and living room, those to its left and right were the sleeping quarters for my helper and I respectively. All three windows had a covering of cloth, no glass being available, and the main entrance had a stable door. The bedrooms were closed off with a curtain. (Merensky, 1889: 89)
+
+The side chamber in our little house at Kchalatlolu was now used as a church. (Merensky, 1889: 114)
+
+In 1864 the only house in Kchalatlolu had three rooms, the middle one measuring twelve feet square; cooking being done outside. There was also a cattle kraal and a goat enclosure. (Merensky, 1889: 164)
+
+MEDINGEN MISSION STATION
+
+(We) founded our Mission Station, Medingen, next to chief Kashane's village. (Merensky, 1889: 144)
+
+MISSIONARY “RESPONSIBILITIES”
+
+The missionary has to be an authority on all subjects at all times and to act quite decisively, especially in his dealings with the natives. (Merensky, 1889: 157)
+
+GA-RATAO MISSION STATION
+
+We used sun-dried bricks made by the men from inferior clay. Working with clay is usually women's work. The houses were built on a rocky hill, with the foundations laid straight onto the rocks and the walls built with sun-dried bricks. (Merensky, 1889: 180-1)
+
+(When we built a chapel at Ga-Ratao the) people made bricks and fired them. (Merensky, 1889: 188)
+
+Copyright @ francofrescura.co.za

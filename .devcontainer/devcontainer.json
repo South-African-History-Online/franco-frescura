@@ -1,0 +1,33 @@
+{
+  "name": "Franco Frescura Archive",
+  "image": "mcr.microsoft.com/devcontainers/base:alpine",
+
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+
+  "forwardPorts": [8000],
+
+  "postCreateCommand": "python3 -m http.server 8000 &",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "ritwickdey.LiveServer",
+        "ms-vscode.live-server"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.associations": {
+          "*.html": "html"
+        }
+      }
+    }
+  }
+}

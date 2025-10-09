@@ -1,0 +1,48 @@
+# Docker
+.dockerignore
+
+# Node modules (if using npm tools)
+node_modules/
+package-lock.json
+
+# Hugo build output
+hugo-site/public/
+hugo-site/resources/
+hugo-site/.hugo_build.lock
+public/
+resources/
+.hugo_build.lock
+
+# Eleventy
+_site/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+venv/
+env/
+.venv/
