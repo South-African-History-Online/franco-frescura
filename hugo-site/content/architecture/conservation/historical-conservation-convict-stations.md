@@ -1,0 +1,77 @@
+---
+categories:
+- Historical Conservation
+date: '2025-01-01'
+draft: false
+title: Architecture | Historical Conservation
+type: docs
+---
+
+#####   
+CONVICT STATIONS AND THE CAPE COLONIAL POST OFFICE
+
+Franco Frescura
+
+The exploitation of convict labour at the Cape during the Colonial era is closely connected with the work of John Montagu, Colonial Secretary for the Cape 1843-53. Montagu began his career as a colonial administrator in 1834, when he was appointed Colonial Secretary to Van Diemen’s Land, later known as Tasmania which, at that time, was one of the largest penal colonies operated by the British. There he gained a reputation as a brutal administrator and, after a disagreement with the Governor, Sir John Franklin, accepted the post of Colonial Secretary for the Cape, which he held from 25 April 1843 until just before his death in 1853. He was a staunch Anglican, and it is obvious that many of his policies towards convicts were firmly grounded in the puritan belief that correction ought to be brought about through a mixture of a protestant work ethic and religious proselytizing.
+
+On 18 December 1843 Montagu was ordered by Governor Napier to visit Robben Island, for the purpose of “inquiring into the working of the convict system at that penal station”. As a result he put forward a plan which would consolidate the various mental institutions and lazaretti of the Colony upon the island, and would remove the major part of its convicts to work camps upon the mainland. Following the experience he had gained in Tasmania, it was Montagu’s intention that no convict should be detained upon the island “whose crime, conduct and character do not require a more severe degree of discipline and punishment than that which is observed at the convict road station”. Instead convicts were to be removed from their places of incarceration, whose upkeep was a drain upon the fiscus, and placed into work camps where they were expected to engage their labour, for free, on road building and maintenance projects.
+
+In 1844 Montagu’s plan was accepted, and the removal of the chronically sick, lepers, lunatics and paupers to Robben Island was completed by November 1845. By 1857 there were about 720 convict camps scattered about the Colony. These were housed in temporary barracks, capable of being easily dismantled and moved to new locations as the need arose. After working hours, convicts were given basic schooling, with a heavy emphasis upon religious. However the larger of these camps also housed non-convict labourers, as well as their supervisors, and it is apparent that a number of additional facilities were included for their benefit, such as the use of a postal establishment.
+
+From the outset of his arrival at the Cape, Montagu propounded that the establishment of an efficient road infrastructure for the Colony would open up communication and trade with the interior, and was thus an important precondition to its economic development. To achieve this, he needed a source of cheap labour and, given the depleted state of the Cape treasury at that time, convicts were seen as a logical solution to his problem. In this work, Montagu had the benefit of the support of two skilled road designers and land surveyors: Col Charles Michell and Andrew Geddes Bain. Michell was born in England in 1793, commanded a brigade during the Napoleonic wars, fought at the Battle of Waterloo, and subsequently became Professor in the science of fortification at the Royal Military Academy, at Woolwich. In 1828 he was appointed the Colony’s first Surveyor-General, Civil Engineer, and Superintendent of Public Works. He was a brilliant architect, who is credited with the design of many important buildings at the Cape, and played a leading role in the planning and construction of a number of its roads. He retired in 1848 when he returned to England on pension. Bain was an equally multi-talented personality. Initially he trained as a saddler, took part in numerous trading expeditions into the southern African interior, wrote popular verse, and in 1836 was attached to the Royal Engineers. A natural, if untrained engineer, he constructed a number of military roads and passes on the eastern frontier, before undertaking a pioneer study of southern Africa’s geology and making several important fossil discoveries (SESA 1972).
+
+Of the 720-odd convict camps believed to have been in existence during the 1850s, only twenty-two of these are conclusively known to have incorporated a postal facility as part of their establishments. This means that the other seven hundred camps were either too small to warrant a post office in their own right, or did not have an administrator of sufficient seniority to be entrusted with the running of a post office, or were located in the vicinity of an existing postal establishment. Although the majority of these camps probably fell into this latter category, it must be assumed that at least some must have enjoyed equal standing with the twenty-two listed below, and must therefore have had access to a postal service in their own right. If this was indeed the case, then no direct record of their establishments has been discovered to date.
+
+The position of postmaster on a convict station usually fell to the Master of Stores, who was issued with “an obliterating stamp” to process postal matter. At least two such instruments have been documented to date: Wagonmaker’s Valley, which used the octagon numeral 15, and Howison’s Poort, which used a barred triangle obliterator. Being dumb, these could easily be transferred from location to location without necessitating a change of name or the expense of providing their postmasters with an engraved office date stamp. A similar policy of “wanderstempels” was also employed subsequently by the Cape GPO for temporary post offices in Basutoland and on the Kimberley diamond fields, and may have also been applied to the Cape’s Field-Cornet’s Posts.
+
+One clue to the presence of additional convict station post offices may lie with the existence of a number of postal establishments during the 1849-74 period, which were listed as agencies, but which were quite obviously run by field-cornets. These establishments were listed in the Civil Establishment Blue Books from 1849 through to 1874, when all reference to them vanished from Post Office lists. Many of them were short-lived; had a penchant to disappear from the Blue Books, and then mysteriously reappear for a year or two only to vanish into oblivion; or to change their names at short notice, often two or three times within the short period of five years. This is not the behavior expected of a Field-Cornet’s Post, which was usually of a much more permanent nature, but would be consistent with an establishment given to impermanence, and removal at short notice, such as a road crew. Not all of these convict stations would have been large enough to warrant the appointment of a dedicated postmaster, nor, for that matter, would they have supported a thriving postal business, given the levels of literacy existing at that time. It is feasible therefore, that the collection and delivery of mails to temporary road camps would have been charged to a local official, whose duties already included the provision of a rudimentary postal service to isolated farm homesteads.
+
+Given all of the above, it now appears probable that the series of seemingly irrational movements of postmasters, the unpredictable appearances and disappearances of post offices ad their staff, and the endless changes of names, locations and divisions which blight the Colonial listings, were not the result of indifferent documentation, bureaucratic incompetence or the impermanence of staff. Rather, it can now be argued that many of these were temporary post offices which were attached to the nearest existing field-cornetcy, on a short-term basis, to service the needs of convict labor camps. The formation and location of such camps would not have been subject to Post Office planning, but would rather have been ordered by the planning needs and functional work requirements of the Public Works Department, leaving the GPO to passively document such information as the PWD saw fit to pass on to them.
+
+##### THE CASE OF HENRY FANCOURT WHITE, CAPE ROADS ENGINEER
+
+The village of Blanco was established on the farm Modder River during construction of the Montagu Pass in 1844-1847. Initially it was a work camp which included an assembly of workshops, stores and housing for convict workers and their supervisors. Almost from the onset it appears to have been known as Blanco, a pun based on the name of Henry Fancourt White, the engineer in charge of the project. White was an Australian who was brought out to the Cape by the Colonial Secretary, John Montagu, for the purpose of building the pass, and he continued to work in the Cape after the completion of the project. When he retired in 1860 he purchased the camp and laid it out as a formal township, which made provision for a school, a hotel and other public facilities. Although he intended to name it White's Villa, the name of Blanco appears to have stuck.
+
+In 1844 work was also begun on the construction of a new road through the Zuurberg Pass, and in 1847 the convict station, which had previously been established during construction of the Montagu Pass, was transferred to the Zuurberg. The Zuurberg Range lies on the boundary between the divisions of Alexandria and Somerset East, and straddles across the main wagon route from Port Elizabeth to Cradock The road, which travels through the Pass, was generally considered by early visitors to be an "almost impassable mountain", and made it difficult for farming communities in the South African interior to maintain regular contact with the coast.
+
+The road crew included the project engineer, Henry Fancourt White, as well as his entire support staff. Construction took 250 convicts two years to complete, at a cost of ₤20,000. Their first camp was located at the northern end of the pass, possibly near a wagon halt initially known as Grobbelaar’s, and subsequently renamed Ann’s Villa.
+
+In 1851, following the outbreak of the 1850-53 frontier war, the convict camp was removed to the safety of Port Elizabeth where, under White’s direction, it was engaged in the construction of a number of projects. These included a road linking the commercial strip of Main Street to the residential Central area, subsequently named White’s Road, a road to Uitenhage, and a bridge over the Baakens River. By 1853 the threat of war had receded, and the convict station returned to the Zuurberg. Work on the road continued for some years thereafter, and when White retired to Blanco in 1860 the camp was moved to a site on the Boontjes River, some two kilometers south of the pass, where a free wagon outspan was located. The project was probably completed early in 1865, when the camp was removed to a new project.
+
+The work of Fancourt White very clearly illustrates the historical continuities and transitions which took place when a road crew, together with its postal establishment, was moved either from one project to the next, or, when engaged upon the same project, from one site to the next. The composition of the road gang remained essentially the same, but the name of its postal establishment in the Post Office records was changed according to its location. The study also illustrates the silences which occurred in the historical record when, for whatever reason, a road crew moved into an urban area, or into the sphere of an established postal establishment, and its post office was temporarily closed. This is important, for although most historians will happily record the achievements involved in the spanning of a river, or the scaling of a mountain range, the drudgery of common-day road building is scarcely ever mentioned. It seems probable that further research into the postal system, most particularly its field-cornet’s posts, will provide a clear picture of this hitherto unrecorded aspect of colonial life.
+
+During the course of current research the following postal establishments have been linked to convict road gangs or convict stations. The data listed below includes the name of the post office, its magisterial division, as well as it known dates of opening and closing:
+
+> Bain’s Kloof, Worcester 1 JU 1847 1852  
+>  Berg River Convict Station, Paarl 12 AP 1853 24 FE 1854  
+>  Bird Island, Port Elizabeth 1 MY 1872 1873  
+>  Blanco, George 4 DE 1851  
+>  Boontjes River Convict Station, Alexandria 1860 c1866  
+>  Breede River Convict Station, Worcester 31 DE 1852 30 JA 1854  
+>  Buffels River Convict Station, Namaqualand 30 SP 1867 1870  
+>  Doornnek, Boontjes River, Alexandria 1867 1876  
+>  Garcia’s Pass, Riversdale 1880 1882  
+>  Gydouw Pass, Tulbagh 1 AP 1866 1867  
+>  Howison’s Poort, Albany 31 DE 1856 1859  
+>  Katberg, Stockenstrom 25 MR 1862 31 DE 1878  
+>  Lichtenburg Convict Station, Paarl 24 FE 1854 25 MR 1856  
+>  Michell’s Pass Convict Station, Worcester 30 JA 1854 23 DE 1855  
+>  Mostert’s Hoek, Stellenbosch 16 NO 1846 31 MY 1847  
+>  Nieuw Kloof, Tulbagh 27 DE 1858 1868  
+>  Paarde Poort, Uitenhage 19 NO 1860 1878  
+>  Pakhuis, Clanwilliam 1 FE 1862 1871  
+>  Piquineer’s Kloof, Malmesbury 24 JU 1857 1858  
+>  Wagonmaker’s Valley, Worcester 1846 31 MY 1847  
+>  Winterhoek Convict Station, Tulbagh 3 OC 1860 1861  
+>  Zuurberg Convict Station, Somerset East 6 JA 1849 1859
+
+##### POSTSCRIPT
+
+Sometime in December 2001 I was proofreading the last drafts of my book on the Cape Colonial Post Office, when the thought struck me that, although the military post offices, the sea-going Ocean post offices, and the railway’s travelling post offices had each been given their own consolidated listing in my text, the same facility had not been extended to the postal establishments attached to the Colony’s convict stations. At the height of this programme, which was established by John Montagu in 1844 in order to use convict labour to extend the Colony’s road infrastructure, some 700 stations were in existence. Although most must have been small and transient in nature, many others incorporated among their staff a complement of road engineers, administration clerks, stores managers and a number of supervisors, none of whom would have been convict labourers, and some who would have been required by the nature of their work, to keep in regular postal contact with their management in Cape Town. This mail must have been collected, and delivered by return, probably by means of Field-Cornets, whose role in the Cape postal infrastructure has, to date, remained largely unexplained. Thus, although a search through my research notes has produced a very short list of only 22 post offices, it is probable that the actual number must be over a hundred, at the very least. However, given the undocumented nature of Field-Cornets’ posts, this aspect of the Post Office will have to remain a matter of conjecture until further research has been concluded.
+
+##### BIBLIOGRAPHY
+
+FRESCURA, Franco. 2002. The Post Offices of the Cape of Good Hope, 1792-1910. Johannesburg: Archetype Press.  
+STANDARD ENCYCLOPAEDIA OF SOUTHERN AFRICA. 1970. Cape Town: NASOU.
+
+Copyright @ francofrescura.co.za
