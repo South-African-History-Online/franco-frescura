@@ -1,0 +1,21 @@
+{
+  "name": "franco-frescura-archive",
+  "version": "1.0.0",
+  "description": "Franco Frescura Archive - Hugo Static Site",
+  "scripts": {
+    "dev": "hugo server --bind 0.0.0.0",
+    "build": "hugo --minify",
+    "prebuild": "../scripts/validate_links_pre_build.sh || true",
+    "validate": "python3 ../scripts/analyze_links.py",
+    "fix-links": "python3 ../scripts/fix_all_links.py",
+    "test-links": "python3 ../scripts/test_hugo_links.py"
+  },
+  "keywords": [
+    "hugo",
+    "archive",
+    "architecture",
+    "south-africa"
+  ],
+  "author": "Franco Frescura",
+  "license": "MIT"
+}

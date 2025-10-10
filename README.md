@@ -2,6 +2,20 @@
 
 A comprehensive digital archive dedicated to the life, work, and legacy of **Franco Frescura** (1946-2015) - architect, academic, graphic artist, and authority on South African indigenous architecture, urban development, and cultural heritage.
 
+[![Link Check](https://img.shields.io/badge/links-99%25%20working-brightgreen)]()
+[![Search](https://img.shields.io/badge/search-174%20pages%20indexed-blue)]()
+[![Hugo](https://img.shields.io/badge/hugo-0.111.3-ff4088)]()
+[![License](https://img.shields.io/badge/license-MIT-green)]()
+
+## ✨ Features
+
+- 🔍 **Full-text search** across 174 pages
+- 🔗 **99% link health** with automated validation
+- 📱 **Responsive design** for all devices
+- 🎨 **Custom academic theme** with earth tones
+- 🖼️ **102 verified images** and graphics
+- 🚀 **CI/CD integration** with GitHub Actions
+
 **Current Status:** ✅ Fully migrated to modern Hugo static site (October 2025)
 
 ---

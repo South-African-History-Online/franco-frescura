@@ -1,0 +1,136 @@
+name: Hugo Build with Link Validation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'hugo-site/**'
+      - '.github/workflows/hugo-build-validate.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'hugo-site/**'
+  workflow_dispatch:
+
+jobs:
+  build-and-validate:
+    name: Build Hugo Site and Validate Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.111.3'
+          extended: true
+
+      - name: Build Hugo site
+        run: |
+          cd hugo-site
+          hugo --minify --verbose
+
+      - name: Set up Python for link validation
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          pip install beautifulsoup4 lxml requests
+
+      - name: Validate built site links
+        id: validate
+        run: |
+          python3 - <<'EOF'
+          import os
+          import re
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+
+          public_dir = Path('hugo-site/public')
+          broken_links = []
+
+          # Get all HTML files
+          html_files = list(public_dir.rglob('*.html'))
+          print(f"Checking {len(html_files)} HTML files...")
+
+          # Check internal links
+          for html_file in html_files:
+              with open(html_file, 'r', encoding='utf-8') as f:
+                  soup = BeautifulSoup(f.read(), 'html.parser')
+
+              # Check all links
+              for link in soup.find_all('a', href=True):
+                  href = link['href']
+
+                  # Skip external links
+                  if href.startswith(('http://', 'https://', 'mailto:', '#', '//')):
+                      continue
+
+                  # Convert to file path
+                  if href.startswith('/'):
+                      href = href.lstrip('/')
+
+                  # Remove anchor
+                  href = href.split('#')[0]
+
+                  if not href:
+                      continue
+
+                  # Check if target exists
+                  target = public_dir / href / 'index.html'
+                  if not target.exists():
+                      target = public_dir / f"{href}.html"
+
+                  if not target.exists():
+                      broken_links.append({
+                          'source': str(html_file.relative_to(public_dir)),
+                          'href': href
+                      })
+
+          if broken_links:
+              print(f"\n❌ Found {len(broken_links)} broken links:\n")
+              for link in broken_links[:20]:  # Show first 20
+                  print(f"  {link['source']} → {link['href']}")
+
+              if len(broken_links) > 20:
+                  print(f"  ... and {len(broken_links) - 20} more")
+
+              exit(1)
+          else:
+              print("\n✅ All internal links are valid!")
+              exit(0)
+          EOF
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hugo-build
+          path: hugo-site/public/
+          retention-days: 7
+
+      - name: Comment PR with validation results
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## ❌ Hugo Build Link Validation Failed
+
+              The Hugo build succeeded, but link validation found broken links.
+
+              Please check the workflow logs for details and fix the broken links.
+              `
+            });
