@@ -10,10 +10,10 @@ type: docs
 #####   
 Please note: click on the image to view it larger 
 
-[![mad-bomber-small](/images/burger-saga/mad-bomber-small.jpg)](graphic-work-mad-bomber.html) | [![20-broeders-grim-small](/images/burger-saga/20-broeders-grim-small.jpg)](graphic-work-broeders-grim.html)  
+[![mad-bomber-small](/images/burger-saga/mad-bomber-small.jpg)](/graphic-work/graphic-work-mad-bomber/) | [![20-broeders-grim-small](/images/burger-saga/20-broeders-grim-small.jpg)](/graphic-work/graphic-work-broeders-grim/)  
 ---|---  
-[![17-boys-meat-small](/images/burger-saga/17-boys-meat-small.jpg)](graphic-work-boys-meat.html) | [![16-second-parttwo-small](/images/burger-saga/16-second-parttwo-small.jpg)](graphic-work-crunch.html)  
-[![15-second-crunch-small](/images/burger-saga/15-second-crunch-small.jpg)](graphic-work-sec-crunch.html) | [![06-small](/images/burger-saga/06-small.jpg)](graphic-work-saga-festival.html)  
+[![17-boys-meat-small](/images/burger-saga/17-boys-meat-small.jpg)](/graphic-work/graphic-work-boys-meat/) | [![16-second-parttwo-small](/images/burger-saga/16-second-parttwo-small.jpg)](/graphic-work/graphic-work-crunch/)  
+[![15-second-crunch-small](/images/burger-saga/15-second-crunch-small.jpg)](/graphic-work/graphic-work-sec-crunch/) | [![06-small](/images/burger-saga/06-small.jpg)](/graphic-work/graphic-work-saga-festival/)  
   
 #####   
 

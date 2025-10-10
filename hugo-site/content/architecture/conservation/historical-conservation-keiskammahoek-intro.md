@@ -9,6 +9,6 @@ type: docs
 
 ##### 
 
-##### [![keoskammahoek2](/images/keis/keoskammahoek2.jpg)](historical-conservation-keiskammahoek.html)
+##### [![keoskammahoek2](/images/keis/keoskammahoek2.jpg)](/architecture/conservation/historical-conservation-keiskammahoek/)
 
 Copyright @ francofrescura.co.za
