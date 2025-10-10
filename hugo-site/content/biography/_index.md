@@ -3,6 +3,7 @@ title: "Biography"
 weight: 10
 bookFlatSection: false
 bookToc: true
+description: "Personal details, curriculum vitae, and biographical information about Franco Frescura's life and career as an architect, academic, and activist"
 ---
 
 # Franco Frescura: Life and Work

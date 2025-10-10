@@ -2,6 +2,18 @@
 
 Get the Franco Frescura Archive running locally in under 2 minutes.
 
+## ✨ What's New (October 2025)
+
+The Hugo site now features a **modern, responsive design** with:
+- **Dropdown menus** for Architecture subsections
+- **Mobile-friendly** hamburger menu
+- **Modern styling** with CSS Grid and smooth animations
+- **SEO optimized** with comprehensive meta tags
+- **Sticky navigation** for better UX
+- **Original color palette** (terracotta and earth tones)
+
+Access the modern site at **http://localhost:1313** after starting Docker.
+
 ---
 
 ## ⚡ Fastest Start (Both Sites)

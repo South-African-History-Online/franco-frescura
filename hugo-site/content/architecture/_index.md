@@ -3,6 +3,7 @@ title: "Architecture"
 weight: 20
 bookFlatSection: false
 bookToc: true
+description: "Comprehensive documentation of indigenous architecture, colonial settlements, mission stations, and historical conservation across southern Africa"
 ---
 
 # Architecture Research

@@ -2,19 +2,29 @@
 <div class="home">
     <section class="hero">
         <h1>Franco Frescura Archive</h1>
-        <p class="lead">{{ .Site.Params.description }}</p>
+        <p class="lead">A comprehensive digital archive dedicated to the life, work, and legacy of Franco Frescura (1946-2015) - architect, academic, graphic artist, and authority on South African indigenous architecture, urban development, and cultural heritage.</p>
     </section>
 
     <section class="sections">
         <h2>Explore the Archive</h2>
         <div class="grid">
+            {{ $sectionDescriptions := dict
+                "biography" "Personal details, curriculum vitae, and biographical information about Franco Frescura's life and career as an architect, academic, and activist."
+                "architecture" "Comprehensive documentation of indigenous architecture, colonial settlements, mission stations, and historical conservation across southern Africa."
+                "urban-issues" "Research on apartheid cities, housing policy, urbanization, and the social impact of urban development in South Africa."
+                "lectures" "Public lectures, conference papers, and university teaching materials delivered between 1977 and 2010."
+                "graphic-work" "Political cartoons including the John Burger Saga, stamp essays, and graphic design work from the South African Post Office."
+                "postal-history" "Research into the Cape colonial Post Office, South African stamp issues, and postal establishment records."
+                "glossary" "Comprehensive architectural and cultural terminology related to South African indigenous architecture and heritage."
+                "search" "Search across all 174 pages of the archive with intelligent scoring and full-text search capabilities."
+            }}
             {{ range .Site.Sections }}
             <div class="card">
                 <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                 {{ if .Params.description }}
                 <p>{{ .Params.description }}</p>
-                {{ else if .Summary }}
-                <p>{{ .Summary }}</p>
+                {{ else }}
+                <p>{{ index $sectionDescriptions .Section }}</p>
                 {{ end }}
             </div>
             {{ end }}
@@ -24,12 +34,12 @@
     {{ $pages := where .Site.RegularPages "Section" "!=" "" }}
     {{ if $pages }}
     <section class="recent">
-        <h2>Recent Content</h2>
+        <h2>Recently Updated</h2>
         <ul>
-        {{ range first 5 $pages }}
+        {{ range first 10 $pages }}
             <li>
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                <span class="section">{{ .Section }}</span>
+                <span class="section">{{ humanize .Section }}</span>
             </li>
         {{ end }}
         </ul>
