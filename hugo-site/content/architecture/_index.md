@@ -6,8 +6,6 @@ bookToc: true
 description: "Comprehensive documentation of indigenous architecture, colonial settlements, mission stations, and historical conservation across southern Africa"
 ---
 
-# Architecture Research
-
 Franco Frescura's architectural research spans indigenous traditions, colonial settlement patterns, mission stations, and historical conservation. His work represents the most comprehensive documentation of southern African traditional architecture undertaken in the 20th century.
 
 ## Research Areas

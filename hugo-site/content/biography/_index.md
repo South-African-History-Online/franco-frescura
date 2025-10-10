@@ -6,8 +6,6 @@ bookToc: true
 description: "Personal details, curriculum vitae, and biographical information about Franco Frescura's life and career as an architect, academic, and activist"
 ---
 
-# Franco Frescura: Life and Work
-
 Franco Frescura (1946-2015) was an Italian-born South African architect, academic, and political activist whose groundbreaking research on indigenous architecture transformed our understanding of southern African built heritage.
 
 ## Contents
