@@ -15,7 +15,7 @@ Please note: click on the image to view it larger
 [![08-small](/images/burger-saga/08-small.jpg)](graphic-work-saga-closelook.html) | [![09-small](/images/burger-saga/09-small.jpg)](graphic-work-enzymes.html)  
 [![10-burger-show-small](/images/burger-saga/10-burger-show-small.jpg)](graphic-work-master-beer.html) | [![13-graft-cars-small](/images/burger-saga/13-graft-cars-small.jpg)](graphic-work-craft-cars.html)  
   
-[<<thumb nails continues on next page>>](graphic-work-john-burger-cont2.html)
+[<<thumb nails continues on next page>>](/graphic-work/graphic-work-john-burger-cont2/)
 
 #####   
 

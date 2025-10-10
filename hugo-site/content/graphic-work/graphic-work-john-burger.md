@@ -15,7 +15,7 @@ Please note: click on the image to view it larger
 [![04-saga-small](/images/burger-saga/04-saga-small.jpg)](graphic-work-sagap1.html) | [![05-parttwo-small](/images/burger-saga/05-parttwo-small.jpg)](graphic-work-saga-p2.html)  
 [![02-money-small](/images/burger-saga/02-money-small.jpg)](graphic-work-money.html) | [![07-travelogue-small](/images/burger-saga/07-travelogue-small.jpg)](graphic-work-travelogue.html)  
   
-##### [<<thumb nails continues on next page>>](graphic-work-john-burger-cont.html)
+##### [<<thumb nails continues on next page>>](/graphic-work/graphic-work-john-burger-cont/)
 
 #####   
 

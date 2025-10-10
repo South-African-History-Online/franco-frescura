@@ -7,6 +7,6 @@ title: Architecture | Graphic Work
 type: docs
 ---
 
-[menu](graphic-work-john-burger.html) / PREVIOUS / NEXT  ![mad-bomber](/images/burger-saga/mad-bomber.jpg)   
+[menu](/graphic-work/graphic-work-john-burger/) / PREVIOUS / NEXT  ![mad-bomber](/images/burger-saga/mad-bomber.jpg)   
   
 ---

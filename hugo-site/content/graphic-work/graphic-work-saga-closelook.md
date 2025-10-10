@@ -7,6 +7,6 @@ title: Architecture | Graphic Work
 type: docs
 ---
 
-[menu](graphic-work-john-burger.html) / PREVIOUS / NEXT  ![08](/images/burger-saga/08.jpg)   
+[menu](/graphic-work/graphic-work-john-burger/) / PREVIOUS / NEXT  ![08](/images/burger-saga/08.jpg)   
   
 ---

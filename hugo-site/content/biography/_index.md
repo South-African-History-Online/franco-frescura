@@ -11,10 +11,10 @@ Franco Frescura (1946-2015) was an Italian-born South African architect, academi
 
 ## Contents
 
-- [Full Biography](full-biography/)
-- [Brief Biography](brief-biography/)
-- [Curriculum Vitae](curriculum-vitae/)
-- [Publications List](publications/)
+- [Full Biography](/biography/franco-full-biography/)
+- [Brief Biography](/biography/franco-brief-biography/)
+- [Curriculum Vitae](/biography/franco-executive-cv/)
+- [Publications List](/biography/franco-publication-cv/)
 
 ## Quick Facts
 
