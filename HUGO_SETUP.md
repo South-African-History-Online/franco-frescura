@@ -10,11 +10,16 @@ You now have **TWO versions** of the Franco Frescura website running side-by-sid
 - **Purpose:** Keep the original site accessible for reference
 - **Status:** ✅ Running in Docker (nginx)
 
-### 2. Modern Hugo Site (New)
+### 2. Modern Hugo Site (New) - Updated October 2025
 - **URL:** http://localhost:1313
 - **Location:** `hugo-site/` directory
 - **Purpose:** Modern, responsive, searchable archive
 - **Status:** ✅ Running in Docker (Hugo development server)
+- **New Features:**
+  - Modern responsive design with dropdown menus
+  - Mobile-friendly navigation
+  - Comprehensive SEO optimization
+  - Enhanced styling with CSS Grid and smooth animations
 
 ---
 
@@ -29,14 +34,20 @@ franco-frescura/
 │   └── graphics/            # Original graphics
 │
 ├── hugo-site/                # NEW HUGO SITE
-│   ├── hugo.toml            # Hugo configuration
+│   ├── hugo.toml            # Hugo configuration (updated with SEO)
 │   ├── content/             # Markdown content
 │   │   ├── _index.md        # Homepage
 │   │   ├── biography/       # Biography section
 │   │   └── architecture/    # Architecture section
 │   ├── themes/
 │   │   └── frescura-academic/  # Custom theme
-│   ├── static/              # Static assets (images, etc.)
+│   │       ├── layouts/     # Modern templates with SEO
+│   │       └── static/
+│   │           ├── css/style.css  # Modern responsive CSS
+│   │           └── js/menu.js     # Mobile menu JavaScript
+│   ├── static/              # Static assets
+│   │   ├── images/          # Images
+│   │   └── robots.txt       # SEO optimization
 │   ├── layouts/             # Custom templates (if needed)
 │   └── archetypes/          # Content templates
 │

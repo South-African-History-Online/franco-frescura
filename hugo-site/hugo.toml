@@ -2,7 +2,9 @@ baseURL = 'https://francofrescura.org/'
 languageCode = 'en-us'
 title = 'Franco Frescura Archive'
 theme = 'frescura-academic'
-paginate = 10
+
+[pagination]
+  pagerSize = 10
 
 # Enable GitInfo for last modified dates
 enableGitInfo = false
@@ -25,6 +27,12 @@ enableEmoji = true
   env = "production"
   description = "A comprehensive digital archive of Franco Frescura's work on South African architecture, urban development, and cultural heritage"
   author = "Franco Frescura"
+  keywords = ["Franco Frescura", "South African architecture", "indigenous architecture", "urban development", "cultural heritage", "Xhosa", "Tswana", "Zulu", "Venda", "colonial architecture"]
+
+  # SEO and Social
+  images = ["/images/franco-1987.jpg"]
+  twitterCard = "summary_large_image"
+  twitterSite = "@sahistoryonline"
 
   # Navigation
   ShowBreadCrumbs = true
@@ -58,6 +66,34 @@ enableEmoji = true
   name = "Architecture"
   url = "/architecture/"
   weight = 20
+
+[[menus.main]]
+  identifier = "indigenous"
+  name = "Indigenous"
+  parent = "architecture"
+  url = "/architecture/indigenous/"
+  weight = 21
+
+[[menus.main]]
+  identifier = "colonial"
+  name = "Colonial"
+  parent = "architecture"
+  url = "/architecture/colonial/"
+  weight = 22
+
+[[menus.main]]
+  identifier = "missions"
+  name = "Mission Stations"
+  parent = "architecture"
+  url = "/architecture/mission-stations/"
+  weight = 23
+
+[[menus.main]]
+  identifier = "conservation"
+  name = "Conservation"
+  parent = "architecture"
+  url = "/architecture/conservation/"
+  weight = 24
 
 [[menus.main]]
   identifier = "urban"
@@ -106,6 +142,12 @@ enableEmoji = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
+
+# Sitemap configuration
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 # Image processing
 [imaging]

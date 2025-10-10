@@ -3,7 +3,7 @@ categories:
 - Glossary
 date: '2025-01-01'
 draft: false
-title: Architecture | A glossary of southern african architectural terms
+title: Glossary - K
 type: docs
 ---
 

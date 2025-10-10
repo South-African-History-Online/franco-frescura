@@ -3,32 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>{{ if .IsHome }}{{ .Site.Title }} - {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    {{ with .Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}">{{ else }}{{ with .Site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}">{{ end }}{{ end }}
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="{{ .Site.Params.twitterCard }}">
+    <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ with .Site.Params.twitterSite }}<meta name="twitter:site" content="{{ . }}">{{ end }}
+    {{ with .Params.images }}<meta name="twitter:image" content="{{ index . 0 | absURL }}">{{ else }}{{ with .Site.Params.images }}<meta name="twitter:image" content="{{ index . 0 | absURL }}">{{ end }}{{ end }}
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-            <nav>
-                <ul>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo-section">
+                    <a href="{{ .Site.BaseURL }}" class="site-logo">
+                        <span class="site-name">{{ .Site.Title }}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <div class="container">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
                     {{- range .Site.Menus.main }}
-                    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                    {{- if not .Parent }}
+                    {{- $currentIdentifier := .Identifier }}
+                    {{- $hasChildren := false }}
+                    {{- range $.Site.Menus.main }}
+                        {{- if eq .Parent $currentIdentifier }}
+                            {{- $hasChildren = true }}
+                        {{- end }}
+                    {{- end }}
+                    <li class="nav-item{{ if $hasChildren }} has-dropdown{{ end }}">
+                        <a href="{{ .URL | relURL }}" class="nav-link">{{ .Name }}</a>
+                        {{- if $hasChildren }}
+                        <ul class="dropdown-menu">
+                            {{- range $.Site.Menus.main }}
+                            {{- if eq .Parent $currentIdentifier }}
+                            <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                            {{- end }}
+                            {{- end }}
+                        </ul>
+                        {{- end }}
+                    </li>
+                    {{- end }}
                     {{- end }}
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <main class="container">
-        {{ block "main" . }}{{ end }}
+    <main class="site-content">
+        <div class="container">
+            {{ block "main" . }}{{ end }}
+        </div>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; Franco Frescura Estate | Designed by South African History Online</p>
+            <div class="footer-content">
+                <p>&copy; {{ now.Year }} Franco Frescura Estate - All Rights Reserved</p>
+                <p>Designed by <a href="https://www.sahistory.org.za/" target="_blank" rel="noopener">South African History Online</a></p>
+            </div>
         </div>
     </footer>
+
+    <script src="{{ "js/menu.js" | relURL }}"></script>
 </body>
 </html>

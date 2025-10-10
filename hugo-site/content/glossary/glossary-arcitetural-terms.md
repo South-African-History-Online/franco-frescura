@@ -3,7 +3,7 @@ categories:
 - Glossary
 date: '2025-01-01'
 draft: false
-title: Introduction And Bibliography
+title: Glossary - Introduction and Bibliography
 type: docs
 ---
 

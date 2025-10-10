@@ -85,12 +85,22 @@ jobs:
                   if not href:
                       continue
 
-                  # Check if target exists
-                  target = public_dir / href / 'index.html'
-                  if not target.exists():
-                      target = public_dir / f"{href}.html"
+                  # Check if target exists (HTML or static file)
+                  target = public_dir / href
 
-                  if not target.exists():
+                  # Try different paths
+                  exists = False
+                  if target.exists():
+                      # Direct file/directory exists
+                      exists = True
+                  elif (public_dir / href / 'index.html').exists():
+                      # Directory with index.html
+                      exists = True
+                  elif (public_dir / f"{href}.html").exists():
+                      # HTML file
+                      exists = True
+
+                  if not exists:
                       broken_links.append({
                           'source': str(html_file.relative_to(public_dir)),
                           'href': href
