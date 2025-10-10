@@ -1,0 +1,113 @@
+name: Content Update Link Audit
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'hugo-site/content/**'
+      - 'legacy-site/**'
+  workflow_dispatch:
+
+jobs:
+  audit-links:
+    name: Audit Links After Content Changes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install beautifulsoup4 html2text PyYAML lxml
+
+      - name: Get changed files
+        id: changed_files
+        uses: tj-actions/changed-files@v41
+        with:
+          files: |
+            hugo-site/content/**/*.md
+            legacy-site/**/*.html
+
+      - name: Run comprehensive link audit
+        if: steps.changed_files.outputs.any_changed == 'true'
+        run: |
+          echo "Content files changed:"
+          echo "${{ steps.changed_files.outputs.all_changed_files }}"
+          echo ""
+
+          echo "Running link analysis..."
+          # Note: analyze_links.py checks markdown files directly
+          # This is a preliminary check - full validation happens in Hugo build
+          python3 scripts/analyze_links.py > audit_report.txt 2>&1 || true
+
+          echo "Link analysis complete"
+          # Note: This would need Hugo running for accurate testing
+          # The Hugo Build Validation workflow is the authoritative check
+          cat audit_report.txt
+
+      - name: Check for new broken links
+        id: check_broken
+        if: steps.changed_files.outputs.any_changed == 'true'
+        run: |
+          # Note: analyze_links.py has false positives as it doesn't understand Hugo URL routing
+          # For now, don't fail on analyze_links.py results
+          # The Hugo Build Validation workflow is the authoritative check
+          if grep -q "❌ Found [1-9]" audit_report.txt; then
+            BROKEN_COUNT=$(grep -o "❌ Found [0-9]*" audit_report.txt | grep -o "[0-9]*")
+            echo "broken_count=$BROKEN_COUNT" >> $GITHUB_OUTPUT
+          else
+            echo "broken_count=0" >> $GITHUB_OUTPUT
+          fi
+          # Always mark as no broken links to prevent false positive failures
+          echo "has_broken=false" >> $GITHUB_OUTPUT
+
+      - name: Upload audit report
+        if: always() && steps.changed_files.outputs.any_changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-audit-report
+          path: audit_report.txt
+          retention-days: 30
+
+      - name: Comment PR with audit summary
+        if: steps.changed_files.outputs.any_changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('audit_report.txt', 'utf8');
+            const hasBroken = '${{ steps.check_broken.outputs.has_broken }}' === 'true';
+            const brokenCount = '${{ steps.check_broken.outputs.broken_count }}';
+
+            let body = `## 🔍 Content Update Link Audit\n\n`;
+
+            body += `Preliminary link check completed for updated content.\n\n`;
+            body += `**Note:** This check analyzes markdown files directly. For authoritative link validation, see the **Hugo Build Validation** workflow which tests the actual built site.\n\n`;
+
+            if (brokenCount > 0) {
+              body += `⚠️ The markdown analysis found ${brokenCount} potential link issue(s), but these may be false positives as the analyzer doesn't understand Hugo URL routing.\n\n`;
+            } else {
+              body += `✅ The markdown analysis found no obvious issues.\n\n`;
+            }
+
+            body += `<details>\n<summary>View Analysis Report</summary>\n\n\`\`\`\n${report}\n\`\`\`\n\n</details>`;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+
+      - name: Note about validation
+        if: steps.changed_files.outputs.any_changed == 'true'
+        run: |
+          echo "::notice::Content audit complete - see Hugo Build Validation for authoritative results"
+          echo "::notice::This workflow provides preliminary analysis only and will not fail the build"

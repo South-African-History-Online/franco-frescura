@@ -52,7 +52,7 @@ This section brings together the notes from a number of public lectures and conf
 
 ![conservation](/images/conservation.jpg)
 
-[POSTAL HISTORY](/postal-history/)[](postal-archives/)
+[POSTAL HISTORY](/postal-history/)
 
 The bulk of this section is given over to research into the Cape colonial Post Office, but notes on more recent South African stamp issues published in “Setempe” have also been included. The majority of the longer research papers only found publication in specialized journals overseas.
 

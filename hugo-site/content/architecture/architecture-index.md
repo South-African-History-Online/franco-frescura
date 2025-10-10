@@ -8,6 +8,6 @@ type: docs
 ---
 
 #####   
-[![sa-arch](/images/arch/sa-arch.jpg)](indigenous-architecture-index.html)
+[![sa-arch](/images/arch/sa-arch.jpg)](/architecture/indigenous/)
 
 Copyright @ francofrescura.co.za

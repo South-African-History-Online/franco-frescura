@@ -102,9 +102,9 @@ enableEmoji = true
   region = 'regions'
   topic = 'topics'
 
-# Output formats
+# Output formats (JSON for search index)
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
 
 # Image processing
