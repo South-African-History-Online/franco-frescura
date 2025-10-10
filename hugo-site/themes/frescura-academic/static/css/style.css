@@ -313,10 +313,32 @@ em, i { font-style: italic; }
 
 .hero {
     text-align: center;
-    padding: var(--spacing-xl) 0;
     background: linear-gradient(to bottom, var(--bg-accent) 0%, var(--bg-primary) 100%);
     border-bottom: 3px solid var(--border-color);
     margin-bottom: var(--spacing-xl);
+    overflow: hidden;
+}
+
+.hero-banner {
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-dark);
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    opacity: 0.95;
+}
+
+.hero-content {
+    padding: var(--spacing-xl) var(--spacing-md);
 }
 
 .hero h1 {
@@ -368,18 +390,47 @@ em, i { font-style: italic; }
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: var(--spacing-lg);
     transition: all var(--transition-base);
     box-shadow: var(--shadow-sm);
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
     border-color: var(--primary-light);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: var(--spacing-lg);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card h3 {

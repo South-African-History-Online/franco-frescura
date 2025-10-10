@@ -1,8 +1,13 @@
 {{ define "main" }}
 <div class="home">
     <section class="hero">
-        <h1>Franco Frescura Archive</h1>
-        <p class="lead">A comprehensive digital archive dedicated to the life, work, and legacy of Franco Frescura (1946-2015) - architect, academic, graphic artist, and authority on South African indigenous architecture, urban development, and cultural heritage.</p>
+        <div class="hero-banner">
+            <img src="/graphics/standard-size-banner.jpg" alt="Franco Frescura Archive - Traditional Southern African Architecture" class="banner-image">
+        </div>
+        <div class="hero-content">
+            <h1>Franco Frescura Archive</h1>
+            <p class="lead">A comprehensive digital archive dedicated to the life, work, and legacy of Franco Frescura (1946-2015) - architect, academic, graphic artist, and authority on South African indigenous architecture, urban development, and cultural heritage.</p>
+        </div>
     </section>
 
     <section class="sections">
@@ -18,14 +23,32 @@
                 "glossary" "Comprehensive architectural and cultural terminology related to South African indigenous architecture and heritage."
                 "search" "Search across all 174 pages of the archive with intelligent scoring and full-text search capabilities."
             }}
+            {{ $sectionImages := dict
+                "biography" "/images/portrait-FF.jpg"
+                "architecture" "/images/architecture-icon.jpg"
+                "urban-issues" "/images/urban-issues.jpg"
+                "lectures" "/images/teachers.jpg"
+                "graphic-work" "/images/graphic-icon.jpg"
+                "postal-history" "/images/standard-postage.jpg"
+                "glossary" "/images/native-kraal.jpg"
+                "search" "/images/historical-archive-vignette.jpg"
+            }}
             {{ range .Site.Sections }}
             <div class="card">
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                {{ if .Params.description }}
-                <p>{{ .Params.description }}</p>
-                {{ else }}
-                <p>{{ index $sectionDescriptions .Section }}</p>
+                {{ $sectionImage := index $sectionImages .Section }}
+                {{ if $sectionImage }}
+                <div class="card-image">
+                    <img src="{{ $sectionImage }}" alt="{{ .Title }}" loading="lazy">
+                </div>
                 {{ end }}
+                <div class="card-content">
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    {{ if .Params.description }}
+                    <p>{{ .Params.description }}</p>
+                    {{ else }}
+                    <p>{{ index $sectionDescriptions .Section }}</p>
+                    {{ end }}
+                </div>
             </div>
             {{ end }}
         </div>
