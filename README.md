@@ -365,20 +365,25 @@ python3 scripts/test_hugo_links.py
 
 ### Deployment Options
 
-**Option 1: cPanel Hosting**
+**Option 1: cPanel Hosting (Production)**
+
+For francofrescura.sahistory.org.za deployment:
 
 ```bash
-# Build site
-cd hugo-site
-docker run --rm -v $(pwd):/src klakegg/hugo:ext-alpine --minify
+# 1. Build for production
+./scripts/build-production.sh
 
-# Upload public/ contents to public_html/ via:
-# - cPanel File Manager
-# - FTP/SFTP
-# - Git deployment
+# 2. Deploy to cPanel
+./scripts/deploy-cpanel.sh
 ```
 
-**Option 2: Netlify (Recommended)**
+**Complete cPanel deployment guide:** See [CPANEL_DEPLOYMENT.md](CPANEL_DEPLOYMENT.md) for:
+- Initial setup and SSH configuration
+- Automated deployment with rsync
+- Troubleshooting common issues
+- Manual deployment methods
+
+**Option 2: Netlify**
 
 Create `netlify.toml`:
 ```toml
