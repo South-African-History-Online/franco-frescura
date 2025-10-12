@@ -365,9 +365,38 @@ python3 scripts/test_hugo_links.py
 
 ### Deployment Options
 
-**Option 1: cPanel Hosting (Production)**
+**Option 1: Netlify (Recommended) ⭐**
 
-For francofrescura.sahistory.org.za deployment:
+The simplest deployment method - just push to GitHub and Netlify handles everything:
+
+```bash
+# Push to GitHub
+git push origin main
+
+# Netlify automatically:
+# - Builds the site
+# - Deploys to production
+# - Updates in ~30 seconds
+```
+
+**Setup (5 minutes):**
+1. Connect GitHub repo to [Netlify](https://app.netlify.com)
+2. Netlify auto-detects `netlify.toml` configuration
+3. Deploy automatically on every push
+
+**Complete guide:** See [NETLIFY_DEPLOYMENT.md](NETLIFY_DEPLOYMENT.md) for:
+- Step-by-step setup
+- Custom domain configuration
+- Automatic SSL
+- Deploy previews for PRs
+
+**Benefits:** Zero server management, free SSL, global CDN, instant rollbacks, automatic builds
+
+---
+
+**Option 2: cPanel Hosting (Manual)**
+
+For traditional cPanel hosting with manual deployment:
 
 ```bash
 # 1. Build for production
@@ -377,25 +406,9 @@ For francofrescura.sahistory.org.za deployment:
 ./scripts/deploy-cpanel.sh
 ```
 
-**Complete cPanel deployment guide:** See [CPANEL_DEPLOYMENT.md](CPANEL_DEPLOYMENT.md) for:
-- Initial setup and SSH configuration
-- Automated deployment with rsync
-- Troubleshooting common issues
-- Manual deployment methods
+**Complete guide:** See [CPANEL_DEPLOYMENT.md](CPANEL_DEPLOYMENT.md)
 
-**Option 2: Netlify**
-
-Create `netlify.toml`:
-```toml
-[build]
-  command = "cd hugo-site && hugo --minify"
-  publish = "hugo-site/public"
-
-[build.environment]
-  HUGO_VERSION = "0.111.3"
-```
-
-Connect GitHub repository to Netlify for auto-deployment.
+---
 
 **Option 3: Vercel / GitHub Pages**
 
