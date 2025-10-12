@@ -6,6 +6,4 @@ bookToc: true
 description: "Comprehensive documentation of mission stations across southern Africa."
 ---
 
-# Mission Stations
-
 Comprehensive documentation of mission stations across southern Africa.

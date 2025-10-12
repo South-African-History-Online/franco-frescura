@@ -23,6 +23,10 @@ enableEmoji = true
   unsafe = true  # Allow HTML in markdown
 
 [params]
+  # Site branding
+  logo = "/graphics/sun-logo.webp"  # Path to logo image (relative to static folder)
+  tagline = "Architecture, Heritage & Cultural Research"
+
   # PaperMod specific
   env = "production"
   description = "A comprehensive digital archive of Franco Frescura's work on South African architecture, urban development, and cultural heritage"

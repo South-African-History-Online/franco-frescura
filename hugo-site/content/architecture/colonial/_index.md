@@ -6,6 +6,4 @@ bookToc: true
 description: "Settlement patterns and architectural development during the colonial period."
 ---
 
-# Colonial Settlement
-
 Settlement patterns and architectural development during the colonial period.

@@ -43,18 +43,26 @@
             <div class="container">
                 <div class="logo-section">
                     <a href="{{ .Site.BaseURL }}" class="site-logo">
-                        <span class="site-name">{{ .Site.Title }}</span>
+                        {{ with .Site.Params.logo }}
+                        <img src="{{ . | relURL }}" alt="{{ $.Site.Title }} Logo" class="logo-image">
+                        {{ end }}
+                        <div class="site-title-wrapper">
+                            <span class="site-name">{{ .Site.Title }}</span>
+                            {{ with .Site.Params.tagline }}
+                            <span class="site-tagline">{{ . }}</span>
+                            {{ end }}
+                        </div>
                     </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </div>
-        <nav class="main-nav" id="mainNav">
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
             <div class="container">
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
                 <ul class="nav-menu" id="navMenu">
                     {{- range .Site.Menus.main }}
                     {{- if not .Parent }}
@@ -66,7 +74,10 @@
                         {{- end }}
                     {{- end }}
                     <li class="nav-item{{ if $hasChildren }} has-dropdown{{ end }}">
-                        <a href="{{ .URL | relURL }}" class="nav-link">{{ .Name }}</a>
+                        <a href="{{ .URL | relURL }}" class="nav-link" {{ if $hasChildren }}aria-haspopup="true"{{ end }}>
+                            {{ .Name }}
+                            {{ if $hasChildren }}<span class="dropdown-arrow" aria-hidden="true">▾</span>{{ end }}
+                        </a>
                         {{- if $hasChildren }}
                         <ul class="dropdown-menu">
                             {{- range $.Site.Menus.main }}
