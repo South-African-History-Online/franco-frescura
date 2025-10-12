@@ -1,0 +1,66 @@
+{{ define "main" }}
+<article class="gallery-section">
+    <header class="gallery-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="gallery-description">{{ . }}</p>
+        {{ end }}
+        {{ if .Content }}
+        <div class="gallery-intro">
+            {{ .Content }}
+        </div>
+        {{ end }}
+    </header>
+
+    {{ if .Pages }}
+    <div class="image-gallery">
+        {{ range .Pages }}
+        {{ $imagePath := "" }}
+        {{ $imageAlt := .Title }}
+
+        {{/* Extract image from content - look for markdown image syntax */}}
+        {{ $content := .RawContent }}
+        {{ $imageRegex := `!\[([^\]]*)\]\(([^)]+)\)` }}
+        {{ if findRE $imageRegex $content 1 }}
+            {{ $match := index (findRE $imageRegex $content 1) 0 }}
+            {{ $pathRegex := `\(([^)]+)\)` }}
+            {{ if findRE $pathRegex $match 1 }}
+                {{ $pathMatch := index (findRE $pathRegex $match 1) 0 }}
+                {{ $imagePath = trim (trim $pathMatch "(") ")" }}
+            {{ end }}
+        {{ end }}
+
+        <div class="gallery-item">
+            <a href="{{ .RelPermalink }}" class="gallery-link">
+                {{ if $imagePath }}
+                <div class="gallery-image-wrapper">
+                    <img src="{{ $imagePath }}"
+                         alt="{{ $imageAlt }}"
+                         loading="lazy"
+                         class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="view-text">View</span>
+                    </div>
+                </div>
+                {{ else }}
+                <div class="gallery-placeholder">
+                    <span>No Image</span>
+                </div>
+                {{ end }}
+                <div class="gallery-meta">
+                    <h3 class="gallery-title">{{ .Title }}</h3>
+                    {{ with .Date }}
+                    {{ if not (eq (printf "%d" .Year) "1") }}
+                    <time class="gallery-date">{{ .Format "2006" }}</time>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    {{ else }}
+    <p class="no-content">No graphic works available.</p>
+    {{ end }}
+</article>
+{{ end }}
