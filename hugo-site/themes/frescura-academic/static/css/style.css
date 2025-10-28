@@ -1189,3 +1189,112 @@ select:focus {
     white-space: nowrap !important;
     border: 0 !important;
 }
+
+/* ========================================
+   SAHO Partnership & Credits
+   ======================================== */
+
+/* Hero Partnership Section */
+.saho-partnership {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border-color);
+    text-align: center;
+}
+
+.partnership-label {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.saho-button {
+    display: inline-block;
+    padding: var(--spacing-md) var(--spacing-xl);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--text-inverse);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+    border: 2px solid transparent;
+}
+
+.saho-button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    border-color: var(--accent);
+}
+
+.saho-button:active {
+    transform: translateY(-1px);
+}
+
+/* Footer SAHO Credits */
+.footer-main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.saho-credit {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.partner-notice {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
+.partner-notice strong {
+    font-weight: 700;
+}
+
+.partner-notice a {
+    color: var(--accent-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: all var(--transition-fast);
+}
+
+.partner-notice a:hover {
+    color: var(--text-inverse);
+    border-bottom-color: var(--text-inverse);
+}
+
+.designed-by {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+/* Responsive adjustments for SAHO elements */
+@media (max-width: 767px) {
+    .saho-partnership {
+        padding: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+    }
+
+    .partnership-label {
+        font-size: 0.85rem;
+    }
+
+    .saho-button {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: 0.95rem;
+    }
+
+    .partner-notice {
+        font-size: 0.95rem;
+    }
+}

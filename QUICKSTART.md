@@ -22,7 +22,7 @@ Run both the legacy HTML site and modern Hugo site simultaneously:
 
 ```bash
 cd /home/mno/Code/franco-frescura
-docker-compose -f docker-compose.dev.yml up -d
+
 ```
 
 **Access the sites:**
