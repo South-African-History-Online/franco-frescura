@@ -1,24 +1,25 @@
-services:
-  # Original HTML site (legacy)
-  html-site:
-    image: nginx:alpine
-    container_name: franco-html
-    ports:
-      - "8888:80"
-    volumes:
-      - ./legacy-site:/usr/share/nginx/html:ro
-    restart: unless-stopped
+version: '3.8'
 
-  # Hugo development server (modern site)
-  hugo-dev:
+services:
+  # Modern Hugo site
+  hugo:
     image: klakegg/hugo:ext-alpine
     container_name: franco-hugo
     command: server --bind 0.0.0.0 --buildDrafts --disableFastRender
-    ports:
-      - "1313:1313"
     volumes:
       - ./hugo-site:/src
-    working_dir: /src
+    ports:
+      - "1313:1313"
+    restart: unless-stopped
     environment:
       - HUGO_ENV=development
+
+  # Legacy HTML site
+  html:
+    image: nginx:alpine
+    container_name: franco-html
+    volumes:
+      - ./legacy-site:/usr/share/nginx/html:ro
+    ports:
+      - "8888:80"
     restart: unless-stopped

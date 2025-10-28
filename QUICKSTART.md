@@ -22,7 +22,7 @@ Run both the legacy HTML site and modern Hugo site simultaneously:
 
 ```bash
 cd /home/mno/Code/franco-frescura
-
+docker-compose -f docker-compose.dev.yml up -d
 ```
 
 **Access the sites:**
@@ -277,9 +277,10 @@ python3 scripts/fix_image_refs.py
 After getting the site running:
 
 1. **Read the full README:** `README.md`
-2. **Hugo-specific setup:** `HUGO_SETUP.md`
-3. **Migration details:** `MIGRATION_COMPLETE.md`
-4. **Image assets info:** `IMAGE_ASSETS_REPORT.md`
+2. **Hugo-specific setup:** `docs/HUGO_SETUP.md`
+3. **Migration details:** `docs/MIGRATION_COMPLETE.md`
+4. **Image assets info:** `docs/IMAGE_ASSETS_REPORT.md`
+5. **All documentation:** `docs/` directory
 
 ---
 
