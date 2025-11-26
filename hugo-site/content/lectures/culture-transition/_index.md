@@ -20,9 +20,9 @@ This series of four lectures explores the complex relationship between cultural 
 
 ## Lectures in This Series
 
-1. [Lecture 1](./lectures_culture_transition_lecture1/) - Introduction to culture and transition
-2. [Lecture 2](./lectures_culture_transition_lecture2/) - Cultural dynamics and built form
-3. [Lecture 3](./lectures_culture_transition_lecture3/) - Case studies in architectural transition
-4. [Lecture 4](./lectures_culture_transition_lecture4/) - Contemporary implications
+1. [Lecture 1](/lectures/culture-transition/lectures_culture_transition_lecture1/) - Introduction to culture and transition
+2. [Lecture 2](/lectures/culture-transition/lectures_culture_transition_lecture2/) - Cultural dynamics and built form
+3. [Lecture 3](/lectures/culture-transition/lectures_culture_transition_lecture3/) - Case studies in architectural transition
+4. [Lecture 4](/lectures/culture-transition/lectures_culture_transition_lecture4/) - Contemporary implications
 
 This lecture series was developed for teaching purposes and represents Franco Frescura's theoretical framework for understanding architectural change in post-apartheid South Africa.
