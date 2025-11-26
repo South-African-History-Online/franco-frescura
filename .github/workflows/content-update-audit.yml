@@ -42,31 +42,26 @@ jobs:
           echo "${{ steps.changed_files.outputs.all_changed_files }}"
           echo ""
 
-          echo "Running link analysis..."
-          # Note: analyze_links.py checks markdown files directly
-          # This is a preliminary check - full validation happens in Hugo build
+          echo "Running Hugo-aware link analysis..."
+          # analyze_links.py now understands Hugo URL routing
           python3 scripts/analyze_links.py > audit_report.txt 2>&1 || true
 
           echo "Link analysis complete"
-          # Note: This would need Hugo running for accurate testing
-          # The Hugo Build Validation workflow is the authoritative check
           cat audit_report.txt
 
       - name: Check for new broken links
         id: check_broken
         if: steps.changed_files.outputs.any_changed == 'true'
         run: |
-          # Note: analyze_links.py has false positives as it doesn't understand Hugo URL routing
-          # For now, don't fail on analyze_links.py results
-          # The Hugo Build Validation workflow is the authoritative check
+          # analyze_links.py is now Hugo-aware - counts should be accurate
           if grep -q "❌ Found [1-9]" audit_report.txt; then
             BROKEN_COUNT=$(grep -o "❌ Found [0-9]*" audit_report.txt | grep -o "[0-9]*")
             echo "broken_count=$BROKEN_COUNT" >> $GITHUB_OUTPUT
+            echo "has_broken=true" >> $GITHUB_OUTPUT
           else
             echo "broken_count=0" >> $GITHUB_OUTPUT
+            echo "has_broken=false" >> $GITHUB_OUTPUT
           fi
-          # Always mark as no broken links to prevent false positive failures
-          echo "has_broken=false" >> $GITHUB_OUTPUT
 
       - name: Upload audit report
         if: always() && steps.changed_files.outputs.any_changed == 'true'
@@ -86,16 +81,22 @@ jobs:
             const hasBroken = '${{ steps.check_broken.outputs.has_broken }}' === 'true';
             const brokenCount = '${{ steps.check_broken.outputs.broken_count }}';
 
-            let body = `## 🔍 Content Update Link Audit\n\n`;
+            let body = `## ✨ Hugo-Aware Link Audit\n\n`;
 
-            body += `Preliminary link check completed for updated content.\n\n`;
-            body += `**Note:** This check analyzes markdown files directly. For authoritative link validation, see the **Hugo Build Validation** workflow which tests the actual built site.\n\n`;
+            body += `**Link check completed** for updated content.\n\n`;
+            body += `This analyzer understands Hugo's URL routing and checks:\n`;
+            body += `- ✅ Content files (markdown → Hugo URLs)\n`;
+            body += `- ✅ Static assets (images, graphics)\n`;
+            body += `- ✅ Section pages and indexes\n`;
+            body += `- ✅ Trailing slash variations\n\n`;
 
             if (brokenCount > 0) {
-              body += `⚠️ The markdown analysis found ${brokenCount} potential link issue(s), but these may be false positives as the analyzer doesn't understand Hugo URL routing.\n\n`;
+              body += `⚠️ **Found ${brokenCount} broken link(s)** that need attention.\n\n`;
             } else {
-              body += `✅ The markdown analysis found no obvious issues.\n\n`;
+              body += `🎉 **All links are valid!**\n\n`;
             }
+
+            body += `_For complete validation including the built site, see the **Hugo Build Validation** workflow._\n\n`;
 
             body += `<details>\n<summary>View Analysis Report</summary>\n\n\`\`\`\n${report}\n\`\`\`\n\n</details>`;
 
@@ -106,8 +107,12 @@ jobs:
               body: body
             });
 
-      - name: Note about validation
+      - name: Summary
         if: steps.changed_files.outputs.any_changed == 'true'
         run: |
-          echo "::notice::Content audit complete - see Hugo Build Validation for authoritative results"
-          echo "::notice::This workflow provides preliminary analysis only and will not fail the build"
+          echo "::notice::Hugo-aware link audit complete ✨"
+          if grep -q "🎉 All links are valid!" audit_report.txt; then
+            echo "::notice::All links validated successfully! 🎉"
+          else
+            echo "::warning::Some links need attention - check the audit report"
+          fi

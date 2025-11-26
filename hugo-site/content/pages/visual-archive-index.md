@@ -2,9 +2,11 @@
 categories:
 - General
 date: '2025-01-01'
-draft: false
+draft: true
 title: Indigenous Architecture
 type: docs
+# Note: Set to draft until actual postcard collection is implemented
+# This preserves the structure for future development
 ---
 
 ##### 

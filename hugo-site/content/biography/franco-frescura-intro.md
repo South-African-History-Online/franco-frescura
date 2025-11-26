@@ -54,10 +54,4 @@ This section brings together the notes from a number of public lectures and conf
 
 [POSTAL HISTORY](/postal-history/)
 
-The bulk of this section is given over to research into the Cape colonial Post Office, but notes on more recent South African stamp issues published in “Setempe” have also been included. The majority of the longer research papers only found publication in specialized journals overseas.
-
-![native-kraal](/images/native-kraal.jpg)
-
-[VISUAL ARCHIVE](/pages/visual-archive-index/)
-
-This section is experimental, and aims to bring together images of southern Africa published on postcards between 1903 and the 1920s. It includes indigenous architecture and customs, colonial architecture, and small town settlement.
+The bulk of this section is given over to research into the Cape colonial Post Office, but notes on more recent South African stamp issues published in "Setempe" have also been included. The majority of the longer research papers only found publication in specialized journals overseas.

@@ -2,6 +2,7 @@
 """
 Comprehensive link analysis for Hugo markdown files.
 Finds all internal links and checks if they resolve correctly.
+Hugo-aware: understands Hugo's URL routing and static file handling.
 """
 
 import os
@@ -11,6 +12,7 @@ from collections import defaultdict
 import urllib.parse
 
 HUGO_CONTENT_DIR = Path('hugo-site/content')
+HUGO_STATIC_DIR = Path('hugo-site/static')
 
 def extract_links(content, filepath):
     """Extract all markdown links from content"""
@@ -54,21 +56,39 @@ def extract_links(content, filepath):
     return links
 
 def resolve_link(link_url, source_file):
-    """Try to resolve a link to an actual file"""
+    """
+    Try to resolve a link to an actual file.
+    Hugo-aware: understands Hugo's URL routing patterns.
+    """
 
     # Parse URL to remove query strings and anchors
     parsed = urllib.parse.urlparse(link_url)
     clean_url = parsed.path
 
-    # Common patterns to check
-    checks = []
+    if not clean_url:
+        return None, False
 
+    # Remove leading slash for path operations
+    clean_path = clean_url.lstrip('/')
+
+    # === STATIC FILES (images, graphics, etc.) ===
+    # Hugo serves static/ files at root level
+    if clean_url.startswith('/images/') or clean_url.startswith('/graphics/'):
+        static_file = HUGO_STATIC_DIR / clean_path
+        if static_file.exists():
+            return str(static_file), True
+
+    # === HTML EXTENSION LINKS (legacy) ===
+    # These should be converted to Hugo-style paths, but check anyway
     if clean_url.endswith('.html') or clean_url.endswith('.htm'):
-        # HTML link - should be converted to Hugo path
-        base = clean_url.replace('.html', '').replace('.htm', '')
+        # Strip extension and try to find markdown file
+        base = clean_path.replace('.html', '').replace('.htm', '')
 
-        # Try different locations
-        checks.append(HUGO_CONTENT_DIR / f"{base}.md")
+        # Try common locations
+        checks = [
+            HUGO_CONTENT_DIR / f"{base}.md",
+            HUGO_CONTENT_DIR / base / '_index.md',
+        ]
 
         # Try in subdirectories
         for subdir in ['architecture', 'urban-issues', 'graphic-work', 'postal-history',
@@ -76,34 +96,53 @@ def resolve_link(link_url, source_file):
             checks.append(HUGO_CONTENT_DIR / subdir / f"{base}.md")
 
         # Try in nested subdirectories
-        checks.append(HUGO_CONTENT_DIR / 'architecture' / 'indigenous' / f"{base}.md")
-        checks.append(HUGO_CONTENT_DIR / 'architecture' / 'conservation' / f"{base}.md")
-        checks.append(HUGO_CONTENT_DIR / 'architecture' / 'mission-stations' / f"{base}.md")
-        checks.append(HUGO_CONTENT_DIR / 'architecture' / 'colonial' / f"{base}.md")
+        checks.extend([
+            HUGO_CONTENT_DIR / 'architecture' / 'indigenous' / f"{base}.md",
+            HUGO_CONTENT_DIR / 'architecture' / 'conservation' / f"{base}.md",
+            HUGO_CONTENT_DIR / 'architecture' / 'mission-stations' / f"{base}.md",
+            HUGO_CONTENT_DIR / 'architecture' / 'colonial' / f"{base}.md",
+        ])
 
-    elif clean_url.endswith('.md'):
-        # Already markdown
-        checks.append(HUGO_CONTENT_DIR / clean_url)
+        for check_path in checks:
+            if check_path.exists():
+                return str(check_path.relative_to(HUGO_CONTENT_DIR)), True
 
-    else:
-        # Might be a Hugo-style path
-        checks.append(HUGO_CONTENT_DIR / clean_url / 'index.md')
-        checks.append(HUGO_CONTENT_DIR / clean_url / '_index.md')
-        checks.append(HUGO_CONTENT_DIR / f"{clean_url}.md")
+        return None, False
 
-    # Check if any exist
-    for check_path in checks:
-        if check_path.exists():
-            return str(check_path.relative_to(HUGO_CONTENT_DIR)), True
+    # === HUGO-STYLE PATHS ===
+    # Hugo generates URLs from content structure
+    # Hugo serves both /path and /path/ for the same content
 
+    # Normalize: remove trailing slash for checking
+    normalized_path = clean_path.rstrip('/')
+
+    # Pattern 1: Direct file - /biography/franco-full-biography(.md)
+    md_file = HUGO_CONTENT_DIR / f"{normalized_path}.md"
+    if md_file.exists():
+        return str(md_file.relative_to(HUGO_CONTENT_DIR)), True
+
+    # Pattern 2: Section index - /biography/ -> /biography/_index.md
+    index_file = HUGO_CONTENT_DIR / normalized_path / '_index.md'
+    if index_file.exists():
+        return str(index_file.relative_to(HUGO_CONTENT_DIR)), True
+
+    # Pattern 3: Alternative index - /biography/ -> /biography/index.md
+    alt_index = HUGO_CONTENT_DIR / normalized_path / 'index.md'
+    if alt_index.exists():
+        return str(alt_index.relative_to(HUGO_CONTENT_DIR)), True
+
+    # Not found
     return None, False
 
 def analyze_all_links():
     """Analyze all links in all markdown files"""
 
     print("=" * 70)
-    print("COMPREHENSIVE LINK ANALYSIS")
+    print("HUGO-AWARE LINK ANALYSIS")
     print("=" * 70)
+    print()
+    print("✨ This analyzer understands Hugo URL routing")
+    print("✅ Checks both content files and static assets")
     print()
 
     all_links = []
@@ -131,7 +170,7 @@ def analyze_all_links():
     working_links = []
     html_extension_links = []
 
-    print("🔍 Analyzing links...")
+    print("🔍 Analyzing links with Hugo routing...")
     print()
 
     for link in all_links:
@@ -172,13 +211,13 @@ def analyze_all_links():
 
     # Report HTML extension links
     print(f"{'='*70}")
-    print(f"HTML EXTENSION LINKS (need conversion)")
+    print(f"HTML EXTENSION LINKS (should be converted)")
     print(f"{'='*70}")
     print()
 
     if html_extension_links:
         print(f"⚠️  Found {len(html_extension_links)} links with .html/.htm extensions")
-        print("   These need to be converted to Hugo-style paths\n")
+        print("   These should be converted to Hugo-style paths\n")
 
         # Group by source file
         by_file = defaultdict(list)
@@ -200,6 +239,9 @@ def analyze_all_links():
         if len(by_file) > 10:
             print(f"   ... and {len(by_file) - 10} more files")
         print()
+    else:
+        print("✅ No legacy HTML links found")
+        print()
 
     # Summary
     print(f"{'='*70}")
@@ -210,6 +252,12 @@ def analyze_all_links():
     print(f"✅ Working links: {len(working_links)}")
     print(f"❌ Broken links: {len(broken_links)}")
     print(f"⚠️  HTML extension links: {len(html_extension_links)}")
+    print()
+
+    if len(broken_links) == 0:
+        print("🎉 All links are valid!")
+    else:
+        print(f"⚠️  {len(broken_links)} links need attention")
     print()
 
     return {
