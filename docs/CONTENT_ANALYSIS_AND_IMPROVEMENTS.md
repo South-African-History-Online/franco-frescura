@@ -388,7 +388,7 @@ Make theme more configurable:
 
   # Archive-specific
   subjectName = "Franco Frescura"
-  subjectYears = "1946-2015"
+  subjectYears = "b. 1946"
   archiveType = "personal"         # Options: personal, organizational, topic
 ```
 

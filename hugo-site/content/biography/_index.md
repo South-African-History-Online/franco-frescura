@@ -6,7 +6,7 @@ bookToc: true
 description: "Personal details, curriculum vitae, and biographical information about Franco Frescura's life and career as an architect, academic, and activist"
 ---
 
-Franco Frescura (1946-2015) was an Italian-born South African architect, academic, and political activist whose groundbreaking research on indigenous architecture transformed our understanding of southern African built heritage.
+Franco Frescura (b. 1946) is an Italian-born South African architect, academic, and political activist whose groundbreaking research on indigenous architecture transformed our understanding of southern African built heritage.
 
 ## Contents
 
@@ -18,7 +18,6 @@ Franco Frescura (1946-2015) was an Italian-born South African architect, academi
 ## Quick Facts
 
 - **Born:** September 28, 1946, Trieste, Italy
-- **Died:** 2015
 - **Education:** BArch (1977), MArch cum laude (1981), PhD (1986) - University of the Witwatersrand
 - **Known For:** Indigenous architecture research, anti-apartheid activism, political cartoons
 - **Major Work:** *Rural Shelter in Southern Africa* (1981)
