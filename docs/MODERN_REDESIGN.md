@@ -255,7 +255,7 @@ For questions or issues with the redesign, check:
 ## Credits
 
 Design and implementation: Claude Code
-Architecture research: Franco Frescura (1946-2015)
+Architecture research: Franco Frescura (b. 1946)
 Content management: South African History Online
 
 ---

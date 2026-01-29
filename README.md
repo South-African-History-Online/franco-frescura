@@ -1,6 +1,6 @@
 # Franco Frescura Archive
 
-A comprehensive digital archive dedicated to the life, work, and legacy of **Franco Frescura** (1946-2015) - architect, academic, graphic artist, and authority on South African indigenous architecture, urban development, and cultural heritage.
+A comprehensive digital archive dedicated to the life, work, and legacy of **Franco Frescura** (b. 1946) - architect, academic, graphic artist, and authority on South African indigenous architecture, urban development, and cultural heritage.
 
 [![Link Check](https://img.shields.io/badge/links-100%25%20working-brightgreen)]()
 [![Search](https://img.shields.io/badge/search-174%20pages-blue)]()

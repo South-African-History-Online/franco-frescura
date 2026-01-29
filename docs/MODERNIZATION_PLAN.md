@@ -1059,7 +1059,7 @@ Architecture ▼
 │                                            │
 │  Franco Frescura Archive                   │
 │  Exploring South African Architectural     │
-│  Heritage, 1946-2015                       │
+│  Heritage, b. 1946                         │
 │                                            │
 │  [Explore Archive →]                       │
 └────────────────────────────────────────────┘
