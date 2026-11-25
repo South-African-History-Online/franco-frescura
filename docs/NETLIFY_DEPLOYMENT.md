@@ -63,7 +63,7 @@ The `netlify.toml` file (already in the repo) configures everything:
   publish = "hugo-site/public"
 
 [build.environment]
-  HUGO_VERSION = "0.111.3"
+  HUGO_VERSION = "0.170.1"
 ```
 
 ## Automatic Deployments
@@ -140,7 +140,7 @@ git push origin main
 **Hugo version mismatch:**
 ```toml
 # Update netlify.toml if needed
-HUGO_VERSION = "0.111.3"  # Must match your local version
+HUGO_VERSION = "0.170.1"  # Must match your local version
 ```
 
 **Wrong build command:**
@@ -296,5 +296,5 @@ If you're currently serving from cPanel:
 ---
 
 **Last Updated:** October 2025
-**Hugo Version:** 0.111.3+
+**Hugo Version:** 0.170.1+
 **Netlify CLI:** Optional (not required for basic deployment)

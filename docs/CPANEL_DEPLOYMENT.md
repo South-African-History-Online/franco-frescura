@@ -149,7 +149,7 @@ Franco Frescura Archive - Production Build
    ✓ Removed old public/ directory
 
 2. Building with local Hugo...
-   Using: hugo v0.111.3+extended
+   Using: hugo v0.170.1+extended
 
 3. Verifying build...
    ✓ Build successful!
@@ -479,9 +479,9 @@ To use a newer Hugo version:
    Edit `scripts/build-production.sh`:
    ```bash
    # Change this line:
-   docker run --rm -v "$(pwd):/src" klakegg/hugo:0.111.3-ext-alpine --minify
+   docker run --rm -v "$(pwd):/project" ghcr.io/gohugoio/hugo:v0.170.1 --minify
    # To newer version:
-   docker run --rm -v "$(pwd):/src" klakegg/hugo:0.120.0-ext-alpine --minify
+   docker run --rm -v "$(pwd):/project" ghcr.io/gohugoio/hugo:v0.170.1 --minify
    ```
 
 ### Monitoring
@@ -619,4 +619,4 @@ find public_html -type f -ls | head -20
 
 **Documentation Version:** 1.0
 **Last Updated:** October 2025
-**Compatible with:** Hugo 0.111.3+, cPanel 108+
+**Compatible with:** Hugo 0.170.1+, cPanel 108+

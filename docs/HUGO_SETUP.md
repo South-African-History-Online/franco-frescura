@@ -140,7 +140,7 @@ docker restart franco-hugo
 **Create a new page:**
 ```bash
 # In hugo-site directory
-docker run --rm -v $(pwd):/src klakegg/hugo:ext-alpine new content/architecture/indigenous/xhosa-architecture.md
+docker run --rm -v $(pwd):/project ghcr.io/gohugoio/hugo:v0.170.1 new content/architecture/indigenous/xhosa-architecture.md
 ```
 
 Or manually create a file:
@@ -229,7 +229,7 @@ When ready to deploy the Hugo site:
 cd hugo-site
 
 # Build static site
-docker run --rm -v $(pwd):/src klakegg/hugo:ext-alpine --minify
+docker run --rm -v $(pwd):/project ghcr.io/gohugoio/hugo:v0.170.1 --minify
 
 # Output goes to hugo-site/public/
 # Upload public/ folder to web server
@@ -424,5 +424,5 @@ nano hugo-site/hugo.toml
 ---
 
 **Last Updated:** October 8, 2025
-**Hugo Version:** v0.111.3 (via Docker)
+**Hugo Version:** v0.170.1 (via Docker)
 **Status:** Development environment ready for content migration

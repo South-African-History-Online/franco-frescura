@@ -78,7 +78,7 @@ franco-frescura/
 
 ### Phase 1: Foundation (October 8, 2025)
 
-- [x] Hugo 0.111.3 installed and configured
+- [x] Hugo 0.170.1 installed and configured
 - [x] Custom "Frescura Academic" theme created
 - [x] Docker development environment set up
 - [x] Multi-level navigation menu configured

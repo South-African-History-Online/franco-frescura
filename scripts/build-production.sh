@@ -49,10 +49,10 @@ if command -v hugo &> /dev/null; then
 
 elif command -v docker &> /dev/null; then
     echo -e "\n${YELLOW}2. Building with Docker (Hugo not found locally)...${NC}"
-    echo -e "${BLUE}   Using: klakegg/hugo:0.111.3-ext-alpine${NC}"
+    echo -e "${BLUE}   Using: ghcr.io/gohugoio/hugo:v0.170.1${NC}"
 
     # Build with Docker
-    docker run --rm -v "$(pwd):/src" klakegg/hugo:0.111.3-ext-alpine --minify
+    docker run --rm -v "$(pwd):/project" ghcr.io/gohugoio/hugo:v0.170.1 --minify
     BUILD_METHOD="docker"
 
 else

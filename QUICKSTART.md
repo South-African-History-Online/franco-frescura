@@ -57,7 +57,7 @@ docker-compose -f docker-compose.dev.yml up -d
 ```bash
 cd /home/mno/Code/franco-frescura/hugo-site
 docker run --rm -it -v $(pwd):/src -p 1313:1313 \
-  klakegg/hugo:ext-alpine server --bind 0.0.0.0
+  ghcr.io/gohugoio/hugo:v0.170.1 server --bind 0.0.0.0
 ```
 
 Access: http://localhost:1313
@@ -171,7 +171,7 @@ lsof -i :8888
 # Build Hugo site for deployment
 cd hugo-site
 docker run --rm -v $(pwd):/src \
-  klakegg/hugo:ext-alpine --minify
+  ghcr.io/gohugoio/hugo:v0.170.1 --minify
 
 # Output in: hugo-site/public/
 ```
