@@ -13,7 +13,7 @@
 
 [build.environment]
   # Hugo version to use (must match your development version)
-  HUGO_VERSION = "0.111.3"
+  HUGO_VERSION = "0.170.1"
 
   # Use extended Hugo (required for SCSS/SASS)
   HUGO_ENV = "production"

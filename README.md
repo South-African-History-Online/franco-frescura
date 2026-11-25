@@ -4,7 +4,7 @@ A comprehensive digital archive dedicated to the life, work, and legacy of **Fra
 
 [![Link Check](https://img.shields.io/badge/links-100%25%20working-brightgreen)]()
 [![Search](https://img.shields.io/badge/search-174%20pages-blue)]()
-[![Hugo](https://img.shields.io/badge/hugo-0.111.3-ff4088)]()
+[![Hugo](https://img.shields.io/badge/hugo-0.170.1-ff4088)]()
 [![License](https://img.shields.io/badge/license-MIT-green)]()
 
 ## Features
@@ -90,7 +90,7 @@ This project preserves and presents Franco Frescura's extensive body of work:
 ## Technology Stack
 
 **Frontend:**
-- Hugo 0.111.3+ (Static Site Generator)
+- Hugo 0.170.1+ (Static Site Generator)
 - Custom "Frescura Academic" theme
 - Responsive HTML5/CSS3
 - Client-side search with JSON index
@@ -226,7 +226,7 @@ Your content here...
 
 ```bash
 # Using Docker
-docker run --rm -v $(pwd)/hugo-site:/src klakegg/hugo:ext-alpine \
+docker run --rm -v $(pwd)/hugo-site:/project ghcr.io/gohugoio/hugo:v0.170.1 \
   new content/architecture/new-article.md
 
 # Using local Hugo
@@ -259,7 +259,7 @@ hugo new content/architecture/new-article.md
 ```bash
 # Build static site
 cd hugo-site
-docker run --rm -v $(pwd):/src klakegg/hugo:ext-alpine --minify
+docker run --rm -v $(pwd):/project ghcr.io/gohugoio/hugo:v0.170.1 --minify
 
 # Output in public/ directory
 ```

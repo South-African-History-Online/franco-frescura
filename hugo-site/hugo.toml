@@ -1,5 +1,5 @@
 baseURL = 'https://francofrescura.sahistory.org.za/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Franco Frescura Archive'
 theme = 'frescura-academic'
 
@@ -155,8 +155,13 @@ enableEmoji = true
 
 # Image processing
 [imaging]
-  quality = 85
   resampleFilter = "Lanczos"
+
+[imaging.jpeg]
+  quality = 85
+
+[imaging.webp]
+  quality = 85
 
 # Privacy settings
 [privacy]

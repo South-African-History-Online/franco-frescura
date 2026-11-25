@@ -3,11 +3,11 @@ version: '3.8'
 services:
   # Modern Hugo site
   hugo:
-    image: klakegg/hugo:ext-alpine
+    image: ghcr.io/gohugoio/hugo:v0.170.1
     container_name: franco-hugo
     command: server --bind 0.0.0.0 --buildDrafts --disableFastRender
     volumes:
-      - ./hugo-site:/src
+      - ./hugo-site:/project
     ports:
       - "1313:1313"
     restart: unless-stopped
